@@ -184,7 +184,7 @@ footer{
 }
 
 
-#alin1_pghistoria{
+.alin_titulos{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -192,7 +192,7 @@ footer{
     flex-direction: column;
 }
 
-#h1_pghistoria{
+.titulos{
     font-size: 65px;
     text-align: center;
 }
@@ -215,9 +215,33 @@ footer{
     font-size: 20px;
 }
 
+#conteudo_pgintroinstalacao{
+    margin: 25px 250px 0 250px;
+    text-align: justify;
+}
 
+.caixatexto_pgintroinstalacao{
+    background: linear-gradient(90deg,#00184d 0%, #008a96 100%);
+    border-radius: 50px;
+    width: 825px;
+    height: 175px;
+    padding: 30px;
+    text-align: justify;
+    margin-bottom: 75px;
+    font-size: 20px;
+}
 
+.subtitulo_pgintroinstalacao{
+    margin: 20px 0 10px 20px;
+}
 
+.lista_pgintroinstalacao{
+    margin: 20px 0 10px 0;
+}
+
+#tamanho_cxtextopgintroinstalação{
+    height: 610px;
+}
 
 
 
