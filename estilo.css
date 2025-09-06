@@ -184,6 +184,36 @@ footer{
 }
 
 
+#alin1_pghistoria{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    flex-direction: column;
+}
+
+#h1_pghistoria{
+    font-size: 65px;
+    text-align: center;
+}
+
+#conteudo_pghistoria{
+    margin: 25px 250px 0 250px;
+}
+
+.caixatexto_pghistoria{
+    background: linear-gradient(90deg,#00184d 0%, #008a96 100%);
+    border-radius: 50px;
+    width: 825px;
+    height: 505px;
+    padding: 30px;
+    text-align: justify;
+    margin-bottom: 75px;
+}
+
+#paragrafo_pghistoria{
+    font-size: 20px;
+}
 
 
 
