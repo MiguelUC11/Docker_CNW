@@ -1,0 +1,620 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    background-color: #06193d;
+    color: #fff;
+    font-family: League Spartan;
+}
+
+body.modoescuro{
+    width: 100vw;
+    height: 100vh;
+    background-color: #94b9ff;
+    color: #06193d;
+    font-family: League Spartan;
+}
+
+header {
+    width: 100%;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo-header {
+    width: 200px;
+    height: auto;
+    margin:   0 0 0 50px;
+}
+
+body.modoescuro #logoheader{
+    filter: invert(1);
+}
+.menu-lateral {
+    width: 100px;
+    height: auto;
+    margin: 0 50px 0 0;
+}
+
+body.modoescuro #menuheader{
+    filter: invert(1);
+}
+
+.links-header {
+    width: 30%;
+    font-size: 1.5pc;
+    display: flex;
+    align-self: center;
+    justify-content: space-between;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+body.modoescuro a{
+    color:#00184d;
+}
+
+.botaomodos{
+    width: 120px;
+    height: 50px;
+    border-radius: 20px;
+    background: linear-gradient(90deg,#00184d 0%, #008a96 100%);
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.3pc;
+    transition: ease 0.3s;
+}
+
+.botaomodos:hover{
+    transform: scale(1.1);
+}
+
+nav{
+    background-color: #06193d;
+}
+
+body.modoescuro nav{
+    background-color: #94b9ff;
+}
+
+nav ul{
+    display: flex;
+    list-style: none;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+nav li{
+    height: 50px;
+}
+nav a{
+    height: 100%;
+    padding: 0 30px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    color: #FFF;
+}
+
+nav li:last-child a{
+    margin-right: auto;
+}
+.barrinha {
+    width: 350px;
+    height: 100vh;
+    background-color: #06193d;
+    backdrop-filter: blur(10px);
+    box-shadow: -10px 3px 10px rgba(0,0,0,0.2);
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 999;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+
+    transform: translateX(100%);
+    transition: transform 0.3s ease-in-out;
+}
+
+.barrinha a:hover{
+    background-color: #061993;
+    color: white;
+}
+
+body.modoescuro .barrinha{
+    background-color: #94b9ff;
+}
+
+.barrinha.ativa {
+    transform: translateX(0);
+}
+
+.barrinha li {
+    width: 100%;
+}
+
+.barrinha a {
+    width: 100%;
+    padding: 15px 30px;
+    box-sizing: border-box;
+}
+
+.footer{
+    background-color:#004466;
+    width: 100%;
+    height: auto;
+    margin-top: 55px;
+    display: block;
+    justify-content: center;
+    align-items: center;
+}
+
+.redes_socias{
+    width: 35px;
+    height: 35px;
+}
+
+.imgsfooter{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 300px;
+    margin-top: 30px;
+}
+
+.alinfooter{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.alintextos_footer{
+    text-align: center;
+    margin: 25px;
+}
+
+.colorido{
+    color: #00ffba;
+}
+
+
+.titulo-exemplosuso{
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    font-size: 5pc;
+    margin-top: 3%;
+    margin-bottom: 2%;
+}
+
+.premain-exemplosuso{
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    padding: 2%;
+}
+
+.caixacolorida-exemplosuso{
+    background: linear-gradient(90deg,#00184d 0%, #008a96 100%);
+    padding: 2%;
+    width: 60vw;
+    height: auto;
+    border-radius: 30px;
+    font-size: 2pc;
+    color: #fff;
+    text-align: center;
+}
+
+.main-exemplosuso{
+    width: 100vw;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.banner-exemplosuso{
+    width: 87vw;
+    height: auto;
+    padding: 3%;
+    border: 2px solid #fff;
+    border-radius: 30px;
+    display: flex;
+    font-size: 1.5pc;
+    margin-top: 5%;
+    text-align: justify;
+}
+
+.imgbanner-exemplosuso{
+    width: 150px;
+    height: 140px;
+    margin-right: 3%;
+}
+
+.corrosa-exemplosuso{
+    color: #e17175;
+    margin-right: 3%;
+    font-size: 3pc;
+}
+
+.corvermelha-exemplosuso{
+    color: #e50914;
+    margin-right: 3%;
+    font-size: 3pc;
+}
+
+.coramarela-exemplosuso{
+    color: #ff9c1a;
+    margin-right: 3%;
+    font-size: 3pc;
+}
+
+.corverde-exemplosuso{
+    color: #1db954;
+    margin-right: 3%;
+    font-size: 3pc;
+}
+
+#fundobanner1-exemplosuso{
+    background-color: #fe025640;
+    transition: ease 0.3s;
+}
+
+#fundobanner1-exemplosuso:hover{
+    border: 3px solid #e17175;
+    transform: scale(1.03);
+}
+
+#fundobanner2-exemplosuso{
+    background-color: #e2d464d4;
+    transition: ease 0.3s;
+}
+
+#fundobanner2-exemplosuso:hover{
+    border: 3px solid #ff9c1a;
+    transform: scale(1.03);
+}
+
+#fundobanner3-exemplosuso{
+    background-color: #df06116b;
+    transition: ease 0.3s;
+}
+
+#fundobanner3-exemplosuso:hover{
+    border: 3px solid #e50914;
+    transform: scale(1.03);
+}
+
+#fundobanner4-exemplosuso{
+    background-color: #0dea5a5d;
+    transition: ease 0.3s;
+}
+
+#fundobanner4-exemplosuso:hover{
+    border: 3px solid #1db954;
+    transform: scale(1.03);
+}
+
+.titulo-oqehdocker{
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    font-size: 5pc;
+    margin-top: 3%;
+    margin-bottom: 2%;
+}
+
+.premain-oqehdocker{
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    padding: 2%;
+}
+
+.caixacolorida-oqehdocker{
+    background: linear-gradient(90deg,#00184d 0%, #008a96 100%);
+    padding: 2%;
+    width: 60vw;
+    height: auto;
+    border-radius: 30px;
+    font-size: 2pc;
+    color: #fff;
+    text-align: center;
+}
+
+.main-exemplosuso{
+    width: 100vw;
+    height: auto;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.main-oqehdocker{
+    width: 100vw;
+    height: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: top;
+}
+
+.subtitulos-oqehdocker{
+    width: 100vw;
+    height: auto;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.subtitulos2-oqehdocker{
+    font-size: 3pc;
+    width: 50vw;
+    height: auto;
+    text-align: center;
+    margin-top: 5%;
+}
+
+.banner-oqehdocker{
+    display: flex;
+    width: 44vw;
+    height: auto;
+    border: 5px solid #008a96;
+    font-size: 2.1pc;
+    border-radius: 20px;
+    text-align: justify;
+    padding: 2%;
+    margin-top: 2%;
+    transition: ease 0.3s;
+}
+
+.banner-oqehdocker:hover{
+    border-color: #00ffba;
+    transform: scale(1.04);
+}
+
+#primeirobanner-oqehdocker{
+    height: 403px;
+}
+
+.caixacolorida2-oqehdocker{
+    background: linear-gradient(90deg,#00184d 0%, #008a96 100%);
+    padding: 2%;
+    width: 80vw;
+    height: auto;
+    border-radius: 30px;
+    font-size: 2pc;
+    color: #fff;
+    text-align: justify;
+    margin-top: 2%;
+}
+
+.espacoimagem-oqehdocker{
+    width: 100vw;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 5%;
+}
+
+.imagem-oqehdocker{
+    width: 600px;
+    height: auto;
+    margin-bottom: 3%;
+    transition: ease 0.3s;
+}
+
+.imagem-oqehdocker:hover{
+    transform: scale(1.06);
+}
+
+.legenda-oqehdocker{
+    font-size: 1.57pc;
+    width: 90vw;
+    text-align: center;
+    border: 5px solid #004466;
+    padding: 2%;
+    border-radius: 40px;
+}
+
+.titulo-historiavm{
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    font-size: 5pc;
+    margin-top: 3%;
+    margin-bottom: 2%;
+}
+
+.premain-historiavm{
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    padding: 2%;
+}
+
+.caixacolorida-historiavm{
+    background: linear-gradient(90deg,#00184d 0%, #008a96 100%);
+    padding: 2%;
+    width: 60vw;
+    height: auto;
+    border-radius: 30px;
+    font-size: 2pc;
+    color: #fff;
+    text-align: center;
+}
+
+.main-historiavm{
+    width: 100vw;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.banner-historiavm{
+    width: 90vw;
+    display: block;
+    margin-bottom: 3%;
+}
+
+.titulobanner-historiavm{
+    font-size: 4pc;
+    padding: 1%;
+    border-bottom: 5px solid #004466;
+    margin-bottom: 3%;
+}
+
+.container-historiavm{
+    width: 90vw;
+    height: auto;
+    border: 3px solid #004466;
+    font-size: 2pc;
+    border-radius: 30px;
+    padding: 2%;
+    text-align: justify;
+    transition: ease 0.3s;
+}
+
+.container-historiavm:hover{
+    border-color: #006597;
+}
+
+.titulo-exemplosvm{
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    font-size: 5pc;
+    margin-top: 3%;
+    margin-bottom: 2%;
+}
+
+.premain-exemplosvm{
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    padding: 2%;
+}
+
+.caixacolorida-exemplosvm{
+    background: linear-gradient(90deg,#00184d 0%, #008a96 100%);
+    padding: 2%;
+    width: 60vw;
+    height: auto;
+    border-radius: 30px;
+    font-size: 2pc;
+    color: #fff;
+    text-align: center;
+}
+
+.main-exemplosvm{
+    width: 100vw;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.banner-exemplosvm{
+    width: 87vw;
+    height: auto;
+    padding: 3%;
+    border: 2px solid #fff;
+    border-radius: 30px;
+    display: flex;
+    font-size: 1.5pc;
+    margin-top: 5%;
+    text-align: justify;
+}
+
+.imgbanner-exemplosvm{
+    width: 150px;
+    height: 140px;
+    margin-right: 3%;
+}
+
+.corpreta-exemplosvm{
+    color: #131a22;
+    margin-right: 3%;
+    font-size: 3pc;
+}
+
+.corazul-exemplosvm{
+    color: #007fff;
+    margin-right: 3%;
+    font-size: 3pc;
+}
+
+.coramarela-exemplosvm{
+    color: #ff9c1a;
+    margin-right: 3%;
+    font-size: 3pc;
+}
+
+.corazul2-exemplosvm{
+    color: #0070ff;
+    margin-right: 3%;
+    font-size: 3pc;
+}
+
+#fundobanner1-exemplosvm{
+    background-color: rgba(238, 195, 78, 0.776);
+    transition: ease 0.3s;
+}
+
+#fundobanner1-exemplosvm:hover{
+    border: 3px solid #131a22;
+    transform: scale(1.03);
+}
+
+#fundobanner2-exemplosvm{
+    background-color: #3b7cb8d4;
+    transition: ease 0.3s;
+}
+
+#fundobanner2-exemplosvm:hover{
+    border: 3px solid #2190ff;
+    transform: scale(1.03);
+}
+
+#fundobanner3-exemplosvm{
+    background-color: #d43b3bd4;
+    transition: ease 0.3s;
+}
+
+#fundobanner3-exemplosvm:hover{
+    border: 3px solid #ff9c1a;
+    transform: scale(1.03);
+}
+
+#fundobanner4-exemplosvm{
+    background-color: #3e403f5d;
+    transition: ease 0.3s;
+}
+
+#fundobanner4-exemplosvm:hover{
+    border: 3px solid #0070ff;
+    transform: scale(1.03);
+}
+
+#imggcp-exemplosvm{
+    width: 200px;
+    height: 130px;
+    margin-right: 3%;
+}

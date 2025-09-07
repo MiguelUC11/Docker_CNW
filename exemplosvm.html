@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title> Empresas que usam VMs </title>
+        <link rel="shortcut icon" href="./imagens/docker.ico" type="image/x-icon">
+        <link rel="stylesheet" href="estilo.css">
+        <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;700&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+        <img class="logo-header" src="./imagens/logo-docker-convertido-de-png.svg" id="logoheader" alt="logo do docker em branco">
+        <section class="links-header">
+            <a href="#">Instalação</a>
+            <a href="#">O que é</a>
+            <a href="#">Características</a>
+        </section>
+        <botton class="botaomodos" id="modos"><span class="iconemodos"> Claro/Escuro</span></botton>
+         <nav>
+
+            <ul class="barrinha">
+                <li class="btn-fechar"><a href="#"><img class="menu-lateral" src="./imagens/close.svg" id="menuheader" alt="Fechar"></a></li>
+                <li><a href="">O que é</a></li>
+                <li><a href="">Vantagens e desvantagens</a></li>
+                <li><a href="">Função</a></li>
+            </ul>
+
+            <ul>
+                <li class="btn-abrir"><a href="#"><img class="menu-lateral" src="./imagens/menu-removebg-preview-convertido-de-png.svg" id="menuheader" alt="três barrinhas representando o menu"></a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="titulo-exemplosvm">
+        <p><span class="colorido">Empresas</span> que usam VMs</p>
+    </section>
+    <section class="premain-exemplosvm">
+        <div class="caixacolorida-exemplosvm"><p> Desde seu surgimento na década de 1960, as VMs continuam sendo essenciais para o mundo da computação, rodando aplicações separadas com até mesmo sistemas operacionais diferentes. Vamos ver a seguir algumas empresas que usam VMs. </p></div>    
+    </section>
+    <main class="main-exemplosvm">
+        <section class="banner-exemplosvm" id="fundobanner1-exemplosvm">
+        <img class="imgbanner-exemplosvm" src="./imagens/aws.png">
+        <h2 class="corpreta-exemplosvm"> AWS: </h2>
+        <p> O Amazon Web Services oferece o serviço EC2 (Elastic Compute Cloud) que é baseado em máquinas virtuais. Por meio dele, o cliente escolhe o "tamanho" de sua VM configurando memória, S.O., CPU e aluga essa VM dentro dos data centers da Amazon. Esse serviço é muito comum para rodar sites, bancos de dados, clusters de processamento pesado, entre outras aplicações, pemitindo escalabilidade para esses processos, permitindo criar e destruir VMs conforme a demanda.</p>    
+        </section>
+        <section class="banner-exemplosvm" id="fundobanner2-exemplosvm">
+        <img class="imgbanner-exemplosvm" src="./imagens/azure.png">
+        <h2 class="corazul-exemplosvm"> Azure: </h2>
+        <p> O Microsoft Azure oferece o Azure Virtual Machines, um serviço que permite criar máquinas virtuais com Linux ou Windows de maneira simples e rápida, em poucos cliques. O cliente pode configurar da maneira como quiser essa VMs, de acordo com o que mais atender à sua necessidade. Empresas que usam servidores Windows por exemplo poderiam migrar facilmente para o Azure pois as VMs recriam esses ambiente. Esse serviço é muito comum para bancos de dados corporativos e servidores de arquivos, com o diferencial de fácil integração nativa com produtos Microsoft.  </p>    
+        </section>
+        <section class="banner-exemplosvm" id="fundobanner3-exemplosvm">
+        <img class="imgbanner-exemplosvm" id="imggcp-exemplosvm" src="./imagens/googlecloudrecort.png">
+        <h2 class="coramarela-exemplosvm"> GCP: </h2>
+        <p>  O Google Cloud Plataform oferece por meio do Compute Engine um serviço de VMs sob demanda, semelhante ao EC2 da Amazon. Permite rodar desde sistemas simples até sistemas complexos de inteligência artificial e processamento de Big Data. É um serviço muito comum entre empresas de tecnologia que precisam de escalabilidade rápida sem investimento em servidores físicos, tendo um diferencial de forte integração com IAs, Machine Learning e análise de dados (BigQuery). Além disso, vale ressaltar o uso de VMs pela Google para rodar seus containers no Kubernets, no seu próprio sistema. </p>    
+        </section>
+        <section class="banner-exemplosvm" id="fundobanner4-exemplosvm">
+        <img class="imgbanner-exemplosvm" src="./imagens/ibm2.png">
+        <h2 class="corazul2-exemplosvm"> IBM: </h2>
+        <p> A IBM foi pioneira na virtualização como já foi visto, e hoje ainda oferece VMs em mainframes modernos por meio do z/Vm e também por meio de sua núvem híbrida (IBM Cloud). Seu serviço de VMs é muito comum em aplicações críticas de empresas do setor financeiro, do governo e de saúde, por conta de sua segurança e confiabilidade. Geralmente é usado para processamento intenso, de transações em bancos (milhões por segundo), sistemas de cartão de crédito e também em seguradoras. Posusi o diferencial de estabilidade e suporte a sistemas legados(antigos). </p>    
+        </section>
+    </main>
+    <footer class="footer">
+        <section class="alinfooter">
+            <figure class="imgsfooter">
+                <a href="https://web.whatsapp.com/">
+                    <img src="./imagens/whatsapp_logo.png" alt="Logo do Whatsapp" class="redes_socias">
+                </a>
+                <a href="https://www.facebook.com/?locale=pt_BR">
+                    <img src="./imagens/facebook_logo.png" alt="Logo do Facebook" class="redes_socias">
+                </a>
+                <a href="https://www.instagram.com/"> 
+                    <img src="./imagens/instagram_logo.png" alt="Logo do Instagram" class="redes_socias">
+                </a>
+                <a href="https://www.threads.com/?hl=pt-br">
+                    <img src="./imagens/threads_logo.png" alt="Logo do Threads" class="redes_socias">
+                </a>
+            </figure>
+        </section>
+        <p class="alintextos_footer">Containerize suas aplicações com eficiência e segurança</p><br>
+    </footer>
+        <script>
+            const button = document.getElementById('modos');
+
+            button.addEventListener("click", () => {
+                document.body.classList.toggle("modoescuro");
+
+                if (document.bodyclassList.contains("modoescuro")){
+                    buttontextContent = 'Modo Claro';
+                } else{
+                    buttontextContent = 'Modo Escuro';
+                }
+            })
+
+            const barra = document.querySelector('.barrinha');
+            const btnAbrir = document.querySelector('.btn-abrir');
+            const btnFechar = document.querySelector('.btn-fechar');
+
+            btnAbrir.addEventListener('click', (e) => {
+                e.preventDefault();
+                barra.classList.add('ativa');
+            });
+
+            btnFechar.addEventListener('click', (e) => {
+                e.preventDefault();
+                barra.classList.remove('ativa');
+            });
+
+        </script>
+    </body>
+</html>
