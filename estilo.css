@@ -242,6 +242,13 @@ footer{
 #tamanho_cxtextopgintroinstalação{
     height: 610px;
 }
+
+
+
+
+
+
+
 nav{
     background-color: #06193d;
 }
@@ -252,6 +259,7 @@ nav ul{
     justify-content: flex-end;
     align-items: center;
 }
+
 nav li{
     height: 50px;
 }
