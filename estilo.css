@@ -199,13 +199,12 @@ footer{
 
 #conteudo_pghistoria{
     margin: 25px 250px 0 250px;
+    text-align: justify;
 }
 
-.caixatexto_pghistoria{
+.caixatexto{
     background: linear-gradient(90deg,#00184d 0%, #008a96 100%);
     border-radius: 50px;
-    width: 825px;
-    height: 505px;
     padding: 30px;
     text-align: justify;
     margin-bottom: 75px;
@@ -213,6 +212,8 @@ footer{
 
 #paragrafo_pghistoria{
     font-size: 20px;
+    text-align: justify;
+    margin-bottom: 15px;
 }
 
 #conteudo_pgintroinstalacao{
@@ -220,16 +221,6 @@ footer{
     text-align: justify;
 }
 
-.caixatexto_pgintroinstalacao{
-    background: linear-gradient(90deg,#00184d 0%, #008a96 100%);
-    border-radius: 50px;
-    width: 825px;
-    height: 175px;
-    padding: 30px;
-    text-align: justify;
-    margin-bottom: 75px;
-    font-size: 20px;
-}
 
 .subtitulo_pgintroinstalacao{
     margin: 20px 0 10px 20px;
@@ -239,11 +230,54 @@ footer{
     margin: 20px 0 10px 0;
 }
 
-#tamanho_cxtextopgintroinstalação{
-    height: 610px;
+
+
+
+/* página vantagens */
+
+#conteudo-vantagens {
+    padding: 50px;
+    max-width: 1000px;
+    margin: auto;
 }
 
+#conteudo-vantagens h1 {
+    font-size: 4pc;
+    text-align: center;
+    margin-bottom: 30px;
+}
 
+#conteudo-vantagens .descricao {
+    font-size: 1.5pc;
+    text-align: justify;
+    margin-bottom: 50px;
+    line-height: 1.8;
+}
+
+.secao-lista-vantagens {
+    margin-bottom: 60px;
+}
+
+.secao-lista-vantagens .subtitulo {
+    font-size: 3pc;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.secao-lista-vantagens ul {
+    list-style: disc;
+    padding-left: 30px;
+    font-size: 1.3pc;
+    line-height: 1.8;
+}
+
+.secao-lista-vantagens li {
+    margin-bottom: 15px;
+}
+
+.secao-lista-vantagens strong {
+    color: #00ffba;
+}
 
 
 
@@ -310,4 +344,21 @@ nav li:last-child a{
     width: 100%;
     padding: 15px 30px;
     box-sizing: border-box;
+}
+
+
+
+.dropdown-menu{
+    position: absolute;
+    display: none;
+}
+
+.dropdown-menu a{
+    display: block;
+    color: rgb(255, 253, 253);
+
+}
+
+.dropdown:hover .dropdown-menu{
+    display: block;
 }

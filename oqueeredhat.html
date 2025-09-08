@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>O que é Red Hat Linux</title>
+    <link rel="stylesheet" href="estilo.css">
+    <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="./imagens/docker.ico" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <a href="index.html"><img class="logo-header" src="./imagens/logo-docker-convertido-de-png.svg" alt="logo do docker em branco"></a>
+
+        <section class="links-header">
+            <a href="introinstalacao.html">Instalação</a>
+            <a href="#">O que é</a>
+            <a href="#">Características</a>
+        </section>
+
+        <nav>
+
+            <ul class="barrinha">
+                <li class="btn-fechar"><a href="#"><img src="./imagens/close.svg" alt="Fechar"></a></li>
+                <li><a href="">O que é</a></li>
+                <li><a href="vantagens.html">Vantagens e desvantagens</a></li>
+                <li><a href="">Função</a></li>
+                <li><a href="historia.html">História do Docker</a></li>
+                <li>
+                    <ul>
+                        
+                        <li class="dropdown">
+                            <a href="">Red Hat Linux</a>
+
+                            <div class="dropdown-menu">
+                                <a href="oqueeredhat.html">O que é</a>
+                                <a href="">Serviço 2</a>
+                                <a href="">Serviço 3</a>
+                            </div>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+
+            <ul>
+                <li class="btn-abrir"><a href="#"><img src="./imagens//menu.svg" alt="Abrir menu"></a></li>
+            </ul>
+        </nav>
+
+        <script>
+            const barra = document.querySelector('.barrinha');
+            const btnAbrir = document.querySelector('.btn-abrir');
+            const btnFechar = document.querySelector('.btn-fechar');
+
+            btnAbrir.addEventListener('click', (e) => {
+                e.preventDefault();
+                barra.classList.add('ativa');
+            });
+
+            btnFechar.addEventListener('click', (e) => {
+                e.preventDefault();
+                barra.classList.remove('ativa');
+            });
+        </script>
+    </header>
+    <main>
+        <section class="alin_titulos">
+            <h1 class="titulos">O que é <br><span class="colorido">Red Hat Linux:</span></h1>
+        </section>
+        <section id="conteudo_pghistoria">
+            <section class="caixatexto">
+                <p id="paragrafo_pghistoria">O Red Hat Linux foi uma das primeiras e mais influentes distribuições de Linux, desenvolvida pela Red Hat Inc. com o objetivo de oferecer um sistema operacional confiável para ambientes corporativos. Desde o início, sua proposta era unir a filosofia do software livre a um modelo de negócio sustentável, trazendo estabilidade, segurança, suporte técnico e recursos pensados especialmente para servidores.</p>
+
+                <p id="paragrafo_pghistoria">Criado em 1994 por Bob Young e Marc Ewing, o Red Hat Linux popularizou-se rapidamente, principalmente após a introdução do Red Hat Package Manager (RPM), em 1995, que se tornou um padrão para a instalação e atualização de softwares em várias outras distribuições. O sistema se destacava também pelo ciclo de atualizações regulares, pelo suporte profissional oferecido pela empresa e pela capacidade de rodar tanto em servidores quanto em estações de trabalho.</p>
+
+                <p id="paragrafo_pghistoria">Em 2002, a Red Hat anunciou o fim do desenvolvimento do Red Hat Linux tradicional, substituindo-o pelo Red Hat Enterprise Linux (RHEL), voltado exclusivamente para empresas. O RHEL trouxe como novidade um modelo de negócio baseado em assinatura, garantindo não apenas o acesso ao sistema, mas também atualizações de longo prazo, patches de segurança e suporte especializado, fatores que consolidaram a Red Hat como referência mundial em soluções corporativas baseadas em Linux.</p>
+
+                <p id="paragrafo_pghistoria">Paralelamente, a comunidade manteve vivo o espírito do antigo Red Hat Linux por meio do Fedora, projeto patrocinado pela Red Hat que serve como plataforma gratuita e de código aberto para experimentação e inovação tecnológica. O Fedora funciona como um “laboratório” de testes: muitas das inovações aprovadas pela comunidade são posteriormente incorporadas ao RHEL, equilibrando a liberdade do software livre com a robustez exigida no mercado empresarial.</p>
+
+                <p id="paragrafo_pghistoria">A trajetória de sucesso da Red Hat atraiu grandes olhares, culminando na sua aquisição pela IBM em 2019, em um negócio avaliado em 34 bilhões de dólares, o maior da história do setor de software livre. Esse marco reforçou a importância estratégica do Linux e da inovação aberta para a indústria de tecnologia, consolidando o papel da Red Hat como ponte entre a comunidade de desenvolvedores e o mundo corporativo.</p>
+
+                <p id="paragrafo_pghistoria">Hoje, o legado do Red Hat Linux permanece vivo: ele não apenas ajudou a moldar o ecossistema Linux moderno, mas também serviu de base para a expansão do modelo de open source no mercado, mostrando que colaboração comunitária e viabilidade comercial podem caminhar lado a lado.</p>
+
+            </section>
+        </section>
+    </main>
+   <footer>
+        <section class="alinfooter">
+            <figure class="imgsfooter">
+                <a href="https://web.whatsapp.com/">
+                    <img src="imagens/whatsapp_logo.png" alt="Logo do Whatsapp" class="redes_socias">
+                </a>
+                <a href="https://www.facebook.com/?locale=pt_BR">
+                    <img src="imagens/facebook_logo.png" alt="Logo do Facebook" class="redes_socias">
+                </a>
+                <a href="https://www.instagram.com/"> 
+                    <img src="imagens/instagram_logo.png" alt="Logo do Instagram" class="redes_socias">
+                </a>
+                <a href="https://www.threads.com/?hl=pt-br">
+                    <img src="imagens/threads_logo.png" alt="Logo do Threads" class="redes_socias">
+                </a>
+            </figure>
+        </section>
+        <p class="alintextos_footer">Containerize suas aplicações com eficiência e segurança</p><br>
+    </footer>
+</body>
+</html>

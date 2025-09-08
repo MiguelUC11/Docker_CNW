@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilo.css">
+    <title>Vantagens e Desvantagens</title>
+    <link rel="shortcut icon" href="./imagens/docker.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <a href="index.html"><img class="logo-header" src="./imagens/logo-docker-convertido-de-png.svg" alt="logo do docker em branco"></a>
+
+        <section class="links-header">
+            <a href="introinstalacao.html">Instalação</a>
+            <a href="#">O que é</a>
+            <a href="#">Características</a>
+
+        </section>
+
+        <nav>
+
+            <ul class="barrinha">
+                <li class="btn-fechar"><a href="#"><img src="./imagens/close.svg" alt="Fechar"></a></li>
+                <li><a href="">O que é</a></li>
+                <li><a href="vantagens.html">Vantagens e desvantagens</a></li>
+                <li><a href="">Função</a></li>
+                <li><a href="historia.html">História do Docker</a></li>
+                <li>
+                    <ul>
+                        
+                        <li class="dropdown">
+                            <a href="">Red Hat Linux</a>
+
+                            <div class="dropdown-menu">
+                                <a href="oqueeredhat.html">O que é</a>
+                                <a href="">Serviço 2</a>
+                                <a href="">Serviço 3</a>
+                            </div>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+
+            <ul>
+                <li class="btn-abrir"><a href="#"><img src="./imagens//menu.svg" alt="Abrir menu"></a></li>
+            </ul>
+        </nav>
+
+        <script>
+            const barra = document.querySelector('.barrinha');
+            const btnAbrir = document.querySelector('.btn-abrir');
+            const btnFechar = document.querySelector('.btn-fechar');
+
+            btnAbrir.addEventListener('click', (e) => {
+                e.preventDefault();
+                barra.classList.add('ativa');
+            });
+
+            btnFechar.addEventListener('click', (e) => {
+                e.preventDefault();
+                barra.classList.remove('ativa');
+            });
+        </script>
+    </header>
+
+    <main id="conteudo-vantagens">
+        <h1 class="titulo-vantagens">Vantagens e Desvantagens</h1>
+        <p class="descricao">
+            Apesar de suas inúmeras qualidades, o Docker também apresenta alguns desafios e
+            limitações que precisam ser considerados. A seguir, são apresentadas suas
+            principais vantagens e desvantagens, destacando tanto os pontos fortes quanto os
+            obstáculos que podem surgir no uso da plataforma.
+        </p>
+
+        <section class="secao-lista-vantagens">
+            <h2 class="subtitulo colorido">Vantagens</h2>
+            <ul>
+                <li><strong>Consistência e compatibilidade:</strong> O Docker Hub é consistente,
+                    funcionando em diversas plataformas, permitindo que equipes unifiquem seu trabalho sem precisar alternar entre programas.</li>
+                <li><strong>Armazenamento:</strong> Todas as informações nos contêineres ficam na nuvem, evitando altos gastos com datacenters.</li>
+                <li><strong>Aplicação rápida e simples:</strong> O sistema de automação evita tarefas repetitivas e economiza tempo.</li>
+                <li><strong>Flexibilidade e escalabilidade:</strong> Suporta diversas linguagens, bibliotecas e permite escalar informações de acordo com a necessidade.</li>
+            </ul>
+        </section>
+
+        <section class="secao-lista-vantagens">
+            <h2 class="subtitulo colorido">Desvantagens</h2>
+            <ul>
+                <li><strong>Documentação desatualizada:</strong> Por ser open-source, muitas vezes a documentação não acompanha todas as atualizações.</li>
+                <li><strong>Dificuldade na aprendizagem:</strong> A variedade de ferramentas e extensões torna o aprendizado mais complexo, mesmo para desenvolvedores experientes.</li>
+                <li><strong>Problemas de segurança:</strong> Muitas imagens possuem vulnerabilidades e o isolamento incompleto pode expor o host a ataques.</li>
+                <li><strong>Automatização limitada:</strong> As ferramentas de automação não são tão bem desenvolvidas quanto o necessário.</li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <section class="alinfooter">
+            <figure class="imgsfooter">
+                <a href="https://web.whatsapp.com/">
+                    <img src="./imagens/whatsapp_logo.png" alt="Logo do Whatsapp" class="redes_socias">
+                </a>
+                <a href="https://www.facebook.com/?locale=pt_BR">
+                    <img src="./imagens/facebook_logo.png" alt="Logo do Facebook" class="redes_socias">
+                </a>
+                <a href="https://www.instagram.com/"> 
+                    <img src="./imagens/instagram_logo.png" alt="Logo do Instagram" class="redes_socias">
+                </a>
+                <a href="https://www.threads.com/?hl=pt-br">
+                    <img src="./imagens/threads_logo.png" alt="Logo do Threads" class="redes_socias">
+                </a>
+            </figure>
+        </section>
+        <p class="alintextos_footer">Containerize suas aplicações com eficiência e segurança</p><br>
+    </footer>
+</body>
+</html>
