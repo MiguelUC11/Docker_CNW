@@ -414,3 +414,35 @@ nav li:last-child a{
     text-align: start;
     border-radius: 50px;
 }
+.h1-primeiropasso{
+    text-align: center;
+    font-size: 6pc;
+}
+#primeiropasso-titulo{
+    margin-top: 60px;
+    margin-left: 70px;
+    width: 1300px;
+    text-align: left;
+}
+.gradiente-primeiropasso{
+    background: linear-gradient(90deg,#00184d 0%, #008a96 100%);
+    width: 1100px;
+    height: 250px;
+    font-size: 30px;
+    text-align: start;
+    border-radius: 50px;
+}
+.primeiropasso-centralizar-gradiente{
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: start;
+}
+#p-primeiropasso{
+    margin: 30px;
+}
+.codigos{
+    background-color: rgb(0, 0, 0);
+    color: rgb(0, 255, 0);
+}
