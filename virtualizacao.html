@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maquina Virtual</title>
+    <link rel="stylesheet" href="estilo.css">
+    <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="./imagens/docker.ico" type="image/x-icon">
+</head>
+
+<body>
+
+    <header>
+        <a href="index.html"><img class="logo-header" src="./imagens/logo-docker-convertido-de-png.svg"
+                alt="logo do docker em branco"></a>
+
+        <section class="links-header">
+            <a href="introinstalacao.html">Instalação</a>
+            <a href="#">O que é</a>
+            <a href="#">Características</a>
+        </section>
+
+        <nav>
+
+            <ul class="barrinha">
+                <li class="btn-fechar"><a href="#"><img src="./imagens/close.svg" alt="Fechar"></a></li>
+                <li><a href="">O que é</a></li>
+                <li><a href="">Vantagens e desvantagens</a></li>
+                <li><a href="">Função</a></li>
+                <li><a href="historia.html">História do Docker</a></li>
+                <li><a href="introinstalacao.html">Introdução à instalação</a></li>
+                <li><a href="virtualizacao.html">O que é virtualização</a></li>
+            </ul>
+
+            <ul>
+                <li class="btn-abrir"><a href="#"><img src="./imagens//menu.svg" alt="Abrir menu"></a></li>
+            </ul>
+        </nav>
+
+        <script>
+            const barra = document.querySelector('.barrinha');
+            const btnAbrir = document.querySelector('.btn-abrir');
+            const btnFechar = document.querySelector('.btn-fechar');
+
+            btnAbrir.addEventListener('click', (e) => {
+                e.preventDefault();
+                barra.classList.add('ativa');
+            });
+
+            btnFechar.addEventListener('click', (e) => {
+                e.preventDefault();
+                barra.classList.remove('ativa');
+            });
+        </script>
+    </header>
+
+    <img class="img-hornet" src="./imagens/virtualizacao.jpg" alt="texto escrito virtualização e quatro computadores">
+
+    <section class="primeira-secao-hornet">
+        <h2 class="titulo-hornet"> O que é <span class="colorido">Virtualização?</span></h2>
+        <p class="textos-hornet">
+            Virtualização é a tecnologia que otimiza o uso de infraestruturas de TI existentes através da criação de
+            "versões virtuais" de ambientes de processamento, aplicações e outros recursos, como hardware disponível,
+            sistemas operacionais, computadores, servidores e/ou dispositivos de armazenamento.
+        </p>
+        <p class="textos-hornet">
+            Em outras palavras, essa tecnologia permite compartilhar recursos de hardware de um servidor físico, por
+            exemplo, e utilizá-los para criar diversos ambientes virtuais isolados, dentro do mesmo equipamento.
+        </p>
+        <p class="textos-hornet">
+            Com a virtualização é possível distribuir recursos como processamento, memória e capacidade de armazenamento
+            do sistema, atribuindo-os para aplicações emuladas que são chamadas de máquinas virtuais (Virtual Machines)
+            ou máquinas guest.
+        </p>
+        <p class="textos-hornet">
+            Essa tecnologia permite o mesmo dispositivo execute sistemas operacionais como o Windows, MacOS, Linux ou
+            aplicações de Outlook, de forma independente e simultânea.
+        </p>
+
+    </section>
+    <section class="segunda-secao-hornet">
+        <h2 class="titulo-hornet">Como a virtualização<span class="colorido"> Surgiu </span></h2>
+
+        <p class="textos-hornet">
+            Ele surgiu em 1960, quando as empresas ainda trabalhavam com computadores enormes que ocupavam uma sala
+            inteira. Inicialmente, esses PCs eram ineficientes, pois o gerenciamento de processos era feito de forma
+            manual por um operador.
+        </p>
+        <p class="textos-hornet">
+            Nos anos 70, o conceito de virtualização se tornou mais forte e foi essencial para o desenvolvimento de
+            novas arquiteturas e tecnologias. O cientista da computação, Robert P. Goldberg, criou a base teórica de
+            sistemas computacionais virtuais e, no mesmo ano, a IBM lançou um mainframe capaz de executar
+            simultaneamente diferentes sistemas operacionais por meio de um programa de controle, o hypervisor.
+        </p>
+        <p class="textos-hornet">
+            A primeira versão criada pela IBM de computador comercial inteiramente projetado para virtualização foi o
+            sistema 370, que com o sistema operacional CP/CMS, permitia executar múltiplas instâncias simultaneamente.
+            Em seguida, surgiu o IBM z/VM, que utilizava a virtualização via hardware de forma mais parecida com a que
+            temos hoje, em que todas as suas interfaces de hardware eram virtualizadas.
+        </p>
+        <p class="textos-hornet">
+            Porém, com o passar das décadas, o conceito de virtualização foi evoluindo e, atualmente, é possível que
+            hypervisors melhorados sejam utilizados por uma virtualização completa, tornando mais fácil a implementação
+            e potencializando a performance.
+        </p>
+        <p class="textos-hornet">
+            Em um passado recente, apenas era considerado a virtualização de servidores. Agora, é possível estendê-la
+            para aplicações, desktop e storage. Isso evidencia os inúmeros benefícios dessa tecnologia que veio para
+            ficar.
+        </p>
+    </section>
+
+</body>
+
+</html>

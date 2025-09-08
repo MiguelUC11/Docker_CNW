@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilo.css">
+    <title>macOS</title>
+    <link rel="shortcut icon" href="./imagens/docker.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <a href="index.html"><img class="logo-header" src="./imagens/logo-docker-convertido-de-png.svg" alt="logo do docker em branco"></a>
+
+        <section class="links-header">
+            <a href="introinstalacao.html">Instalação</a>
+            <a href="#">O que é</a>
+            <a href="#">Características</a>
+        </section>
+
+        <nav>
+
+            <ul class="barrinha">
+                <li class="btn-fechar"><a href="#"><img src="./imagens/close.svg" alt="Fechar"></a></li>
+                <li><a href="">O que é</a></li>
+                <li><a href="">Vantagens e desvantagens</a></li>
+                <li><a href="">Função</a></li>
+                <li><a href="historia.html">História do Docker</a></li>
+                <li><a href="virtualizacao.html">O que é virtualização</a></li>
+            </ul>
+
+            <ul>
+                <li class="btn-abrir"><a href="#"><img src="./imagens//menu.svg" alt="Abrir menu"></a></li>
+            </ul>
+        </nav>
+
+        <script>
+            const barra = document.querySelector('.barrinha');
+            const btnAbrir = document.querySelector('.btn-abrir');
+            const btnFechar = document.querySelector('.btn-fechar');
+
+            btnAbrir.addEventListener('click', (e) => {
+                e.preventDefault();
+                barra.classList.add('ativa');
+            });
+
+            btnFechar.addEventListener('click', (e) => {
+                e.preventDefault();
+                barra.classList.remove('ativa');
+            });
+        </script>
+    </header>
+    <main>
+        <section class="alin_titulos">
+            <h1 class="titulos">
+                Instalando o <span class="colorido">Docker</span><br>no macOS
+            </h1>
+        </section>
+        <section id="conteudo_pgwindows">
+            <p>Agora que você já verificou se seu computador atende aos requisitos
+            para instalação do Docker, vamos ao passo a passo de como instalá-lo no sistema operacional macOS</p>
+            <h2 class="subtitulo_instalacao">Passo 1</h2>
+            <section class="caixatexto">
+                <p>Acesse o site oficial do <a href="https://www.docker.com/products/docker-desktop/"><span>Docker</span></a>
+                e clique no botão "Download Docker Desktop", ou em português, "Baixar Docker Desktop" que estará visível assim
+                que você abrir o site, após isso, selecione a opção que seja compatível com seu chip(Intel ou Apple Silicon)</p>
+            </section>
+            <h2 class="subtitulo_instalacao">Passo 2</h2>
+            <section class="caixatexto">
+                <p>Após seguir o primeiro passo, você terá baixado o arquivo .dmg do Docker em seu computador, procure-o em seu
+                explorador de arquivos, e ao encontrá-lo você deve o abrir e arrastar o ícone do Docker para a pasta aplications,
+                agora, dentro desta pasta você irá abrir o Docker e dar as permissões necessárias, talvez o SO peça a senha de administrador.
+                Depois de alguns segundos o ícone da baleia aparecerá na barra superior indicando que o Docker está rodando</p>
+            </section>
+            <h2 class="subtitulo_instalacao">Passo 3</h2>
+            <section class="caixatexto">
+                <p>Após seguir todos os passos, temos que testar para ver se está tudo certo, para fazer esse teste basta executar
+                os dois códigos abaixo:</p><br>
+                <p>docker --version</p>
+                <p>docker run hello-world</p><br>
+                <p>Se a mensagem "Hello from Docker!" aparecer, o Docker foi instalado com sucesso e agora você pode desfrutar
+                de tudo que o Docker oferece!</p>
+            </section>
+        </section>
+    </main>
+    <footer>
+        <section class="alinfooter">
+            <figure class="imgsfooter">
+                <a href="https://web.whatsapp.com/">
+                    <img src="imagens/whatsapp_logo.png" alt="Logo do Whatsapp" class="redes_socias">
+                </a>
+                <a href="https://www.facebook.com/?locale=pt_BR">
+                    <img src="imagens/facebook_logo.png" alt="Logo do Facebook" class="redes_socias">
+                </a>
+                <a href="https://www.instagram.com/">
+                    <img src="imagens/instagram_logo.png" alt="Logo do Instagram" class="redes_socias">
+                </a>
+                <a href="https://www.threads.com/?hl=pt-br">
+                    <img src="imagens/threads_logo.png" alt="Logo do Threads" class="redes_socias">
+                </a>
+            </figure>
+        </section>
+        <p class="alintextos_footer">Containerize suas aplicações com eficiência e segurança</p><br>
+    </footer>
+</body>
+</html>
