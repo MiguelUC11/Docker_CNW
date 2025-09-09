@@ -429,11 +429,9 @@ nav li:last-child a{
     text-align: center;
 }
 .textos-hornet {
-  width: 1100px;
-  height: 200px;
   font-size: 30px;
   text-align: start;
-  border-radius: 50px;
+  margin: 20px 80px;
 }
 
 .segunda-secao-hornet {
