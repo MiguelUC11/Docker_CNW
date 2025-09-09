@@ -16,18 +16,17 @@
             <a href="#">O que é</a>
             <a href="#">Características</a>
         </section>
-        <botton class="botaomodos" id="modos"><span class="iconemodos"> Claro/Escuro</span></botton>
          <nav>
 
             <ul class="barrinha">
-                <li class="btn-fechar"><a href="#"><img class="menu-lateral" src="./imagens/close.svg" id="menuheader" alt="Fechar"></a></li>
+                <li class="btn-fechar"><a href="#"><img src="./imagens/close.svg" alt="Fechar"></a></li>
                 <li><a href="">O que é</a></li>
                 <li><a href="">Vantagens e desvantagens</a></li>
                 <li><a href="">Função</a></li>
             </ul>
 
             <ul>
-                <li class="btn-abrir"><a href="#"><img class="menu-lateral" src="./imagens/menu-removebg-preview-convertido-de-png.svg" id="menuheader" alt="três barrinhas representando o menu"></a></li>
+                <li class="btn-abrir"><a href="#"><img src="./imagens/menu.svg" alt="três barrinhas representando o menu"></a></li>
             </ul>
         </nav>
     </header>
@@ -79,18 +78,6 @@
         <p class="alintextos_footer">Containerize suas aplicações com eficiência e segurança</p><br>
     </footer>
         <script>
-            const button = document.getElementById('modos');
-
-            button.addEventListener("click", () => {
-                document.body.classList.toggle("modoescuro");
-
-                if (document.bodyclassList.contains("modoescuro")){
-                    buttontextContent = 'Modo Claro';
-                } else{
-                    buttontextContent = 'Modo Escuro';
-                }
-            })
-
             const barra = document.querySelector('.barrinha');
             const btnAbrir = document.querySelector('.btn-abrir');
             const btnFechar = document.querySelector('.btn-fechar');

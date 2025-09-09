@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilo.css">
+    <title>Linux</title>
+    <link rel="shortcut icon" href="./imagens/docker.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <a href="index.html"><img class="logo-header" src="./imagens/logo-docker-convertido-de-png.svg" alt="logo do docker em branco"></a>
+
+        <section class="links-header">
+            <a href="introinstalacao.html">Instalação</a>
+            <a href="#">O que é</a>
+            <a href="#">Características</a>
+        </section>
+
+        <nav>
+
+            <ul class="barrinha">
+                <li class="btn-fechar"><a href="#"><img src="./imagens/close.svg" alt="Fechar"></a></li>
+                <li><a href="">O que é</a></li>
+                <li><a href="">Vantagens e desvantagens</a></li>
+                <li><a href="">Função</a></li>
+                <li><a href="historia.html">História do Docker</a></li>
+                <li><a href="virtualizacao.html">O que é virtualização</a></li>
+            </ul>
+
+            <ul>
+                <li class="btn-abrir"><a href="#"><img src="./imagens//menu.svg" alt="Abrir menu"></a></li>
+            </ul>
+        </nav>
+
+        <script>
+            const barra = document.querySelector('.barrinha');
+            const btnAbrir = document.querySelector('.btn-abrir');
+            const btnFechar = document.querySelector('.btn-fechar');
+
+            btnAbrir.addEventListener('click', (e) => {
+                e.preventDefault();
+                barra.classList.add('ativa');
+            });
+
+            btnFechar.addEventListener('click', (e) => {
+                e.preventDefault();
+                barra.classList.remove('ativa');
+            });
+        </script>
+    </header>
+    <main>
+        <section class="alin_titulos">
+            <h1 class="titulos">
+                Instalando o <span class="colorido">Docker</span><br>no Linux
+            </h1>
+        </section>
+        <section id="conteudo_pgwindows">
+            <p>Agora que você já verificou se seu computador atende aos requisitos
+            para instalação do Docker, vamos ao passo a passo de como instalá-lo no sistema operacional Linux
+            na distribuição Ubuntu que é a mais comum</p>
+            <h2 class="subtitulo_instalacao">Passo 1</h2>
+            <section class="caixatexto">
+                <p>Antes de tudo é necessário atualiazar os pacotes para suas versões mais recentes para evitar conflitos
+                durante e após a instação, para fazer isso abra o terminar e execute o seguinte comando:</p><br>
+                <p>sudo apt update && sudo apt upgrade -y</p>
+            </section>
+            <h2 class="subtitulo_instalacao">Passo 2</h2>
+            <section class="caixatexto">
+                <p>Após a atualização dos pacotes também é necessário instalar dependências que possibilitarão a comunicação
+                do sistema com o repositório do Docker. Execute o código abaixo para fazer isso:</p><br>
+                <p>sudo apt install apt-transport-https ca-certificates curl software-properties-common -y</p>
+            </section>
+            <h2 class="subtitulo_instalacao">Passo 3</h2>
+            <section class="caixatexto">
+                <p>Adicione a chave GPG oficial do Docker, essa chave usada para verificar se os pacotes instalados são originais
+                e seguros, para adicionar essa chave basta você dar o seguinte comando:</p><br>
+                <p>curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -</p>
+            </section>
+            <h2 class="subtitulo_instalacao">Passo 4</h2>
+            <section class="caixatexto">
+                <p>Agora você deverá adicionar o repositório Docker para o sistema saber de onde baixar as versões mais recentes
+                do Docker de forma segura, execute o seguinto comando no terminal para isso:</p><br>
+                <p>sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable"</p>
+            </section>
+            <h2 class="subtitulo_instalacao">Passo 5</h2>
+            <section class="caixatexto">
+                <p>Após realizar tudo isso, podemos finalmente instalar de fato o Docker, você só precisa executar esses dois
+                comandos em sequência:</p><br>
+                <p>sudo apt update</p>
+                <p>sudo apt install docker-ce -y</p>
+            </section>
+            <h2 class="subtitulo_instalacao">Passo 6</h2>
+            <section class="caixatexto">
+                <p>Por último, só precisamos testar para ter certeza que o Docker foi instalado com sucesso em sua máquina. Vamos
+                fazer isso executando os dois cógidos abaixo:</p><br>
+                <p>docker --version</p>
+                <p>docker run hello-world</p><br>
+                <p>Se a mensagem "Hello from Docker!" aparecer significa que ele foi instaldo com sucesso e que tudo ocorreu como
+                deveria, agora você pode desfrutar de tudo que o Docker oferece!.</p>
+            </section>
+        </section>
+    </main>
+    <footer>
+        <section class="alinfooter">
+            <figure class="imgsfooter">
+                <a href="https://web.whatsapp.com/">
+                    <img src="imagens/whatsapp_logo.png" alt="Logo do Whatsapp" class="redes_socias">
+                </a>
+                <a href="https://www.facebook.com/?locale=pt_BR">
+                    <img src="imagens/facebook_logo.png" alt="Logo do Facebook" class="redes_socias">
+                </a>
+                <a href="https://www.instagram.com/">
+                    <img src="imagens/instagram_logo.png" alt="Logo do Instagram" class="redes_socias">
+                </a>
+                <a href="https://www.threads.com/?hl=pt-br">
+                    <img src="imagens/threads_logo.png" alt="Logo do Threads" class="redes_socias">
+                </a>
+            </figure>
+        </section>
+        <p class="alintextos_footer">Containerize suas aplicações com eficiência e segurança</p><br>
+    </footer>
+</body>
+</html>

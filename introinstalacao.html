@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilo.css">
+    <title>Instalação</title>
+    <link rel="shortcut icon" href="./imagens/docker.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <a href="index.html"><img class="logo-header" src="./imagens/logo-docker-convertido-de-png.svg" alt="logo do docker em branco"></a>
+
+        <section class="links-header">
+            <a href="introinstalacao.html">Instalação</a>
+            <a href="#">O que é</a>
+            <a href="#">Características</a>
+        </section>
+
+        <nav>
+
+            <ul class="barrinha">
+                <li class="btn-fechar"><a href="#"><img src="./imagens/close.svg" alt="Fechar"></a></li>
+                <li><a href="">O que é</a></li>
+                <li><a href="">Vantagens e desvantagens</a></li>
+                <li><a href="">Função</a></li>
+                <li><a href="historia.html">História do Docker</a></li>
+                <li><a href="virtualizacao.html">O que é virtualização</a></li>
+            </ul>
+
+            <ul>
+                <li class="btn-abrir"><a href="#"><img src="./imagens//menu.svg" alt="Abrir menu"></a></li>
+            </ul>
+        </nav>
+
+        <script>
+            const barra = document.querySelector('.barrinha');
+            const btnAbrir = document.querySelector('.btn-abrir');
+            const btnFechar = document.querySelector('.btn-fechar');
+
+            btnAbrir.addEventListener('click', (e) => {
+                e.preventDefault();
+                barra.classList.add('ativa');
+            });
+
+            btnFechar.addEventListener('click', (e) => {
+                e.preventDefault();
+                barra.classList.remove('ativa');
+            });
+        </script>
+    </header>
+    <main>
+        <section class="alin_titulos">
+            <h1 class="titulos">
+                Instalando o <span class="colorido">Docker</span>
+            </h1>
+        </section>
+        <section id="conteudo_pgintroinstalacao">
+            <h2 class="subtitulo_instalacao">Introdução</h2>
+            <section class="caixatexto">
+                <p>O Docker é uma ferramenta muito utilizada no desenvolvimento de software, pois permite
+                criar e executar aplicações em containers, ambientes isolados que garantem padronização.
+                Isso possibilita rodar uma aplicação em diferentes sistemas de forma consistente, sem
+                preocupações com configurações específicas.
+                </p>
+                <p>Sua principal vantagem é a portabilidade, já que facilita o compartilhamento de ambientes
+                idênticos entre desenvolvedores, reduzindo erros e acelerando implantações. Antes da instalação,
+                no entanto, é essencial verificar a configuração do sistema e os requisitos necessários.
+                </p>
+            </section>
+            <h2 class="subtitulo_instalacao">Requisitos para instalar o <span class="colorido">Docker</span></h2>
+            <section class="caixatexto" id="tamanho_cxtextopgintroinstalação">
+                <p>Antes de instalar o Docker, é necessário vereficar se seu computador atende ao requisitos.</p>
+                <ul class="lista_pgintroinstalacao">
+                    <h3>Requisitos Gerais</h3>
+                    <li>Processador de 64 bits;</li>
+                    <li>Suporte a virtualização habilitado na BIOS;</li>
+                    <li>Conexão com a internet para baixar pacotes e imagens.</li>
+                </ul>
+                <ul class="lista_pgintroinstalacao">
+                    <h3>Windows</h3>
+                    <li>Windows 10 Pro, Enterprise ou Education (versão 1903 ou superior);</li>
+                    <li>Windows 11 compatível;</li>
+                    <li>Virtualização e WSL 2 habilitados.</li>
+                </ul>
+                <ul class="lista_pgintroinstalacao">
+                    <h3>Linux</h3>
+                    <li>Ubuntu 20.04+, Debian 10+, Fedora 34+, CentOS 7+ ou derivados;</li>
+                    <li>Usuário com permissões de administrador.</li>
+                </ul>
+                <ul class="lista_pgintroinstalacao">
+                    <h3>macOS</h3>
+                    <li>macOS Catalina 10.15 ou superior;</li>
+                    <li>Hardware compatível com virtualização.</li>
+                </ul>
+                <p>Antes de seguir para os tutoriais de instalação no Windows, Linux e macOS,
+                verifique se sua máquina atende aos requisitos listados acima. Isso vai evitar
+                problemas e garantir que o Docker funcione de forma estável no seu ambiente.</p>
+                <p>Com os preparativos feitos, vamos para os próximos passos: a instalação prática
+                em cada sistema operacional.</p>
+            </section>
+            <h3>Acesse o link que corresponde ao seu Sistema Operacional</h3>
+        </section>
+        <section>
+            
+            <ul id="alin_linkspgintroinstalacao">
+                <li class="link_instal_SO"><a href="windows.html">Windows</a></li>
+                <li class="link_instal_SO"><a href="linux.html">Linux</a></li>
+                <li class="link_instal_SO"><a href="macOS.html">macOS</a></li>
+            </ul>
+        </section>
+    </main>
+    <footer>
+        <section class="alinfooter">
+            <figure class="imgsfooter">
+                <a href="https://web.whatsapp.com/">
+                    <img src="imagens/whatsapp_logo.png" alt="Logo do Whatsapp" class="redes_socias">
+                </a>
+                <a href="https://www.facebook.com/?locale=pt_BR">
+                    <img src="imagens/facebook_logo.png" alt="Logo do Facebook" class="redes_socias">
+                </a>
+                <a href="https://www.instagram.com/">
+                    <img src="imagens/instagram_logo.png" alt="Logo do Instagram" class="redes_socias">
+                </a>
+                <a href="https://www.threads.com/?hl=pt-br">
+                    <img src="imagens/threads_logo.png" alt="Logo do Threads" class="redes_socias">
+                </a>
+            </figure>
+        </section>
+        <p class="alintextos_footer">Containerize suas aplicações com eficiência e segurança</p><br>
+    </footer>
+</body>
+</html>

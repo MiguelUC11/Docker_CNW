@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maquina Virtual</title>
+    <link rel="stylesheet" href="estilo.css">
+    <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="./imagens/docker.ico" type="image/x-icon">
+</head>
+
+<body>
+
+    <header>
+        <a href="index.html"><img class="logo-header" src="./imagens/logo-docker-convertido-de-png.svg"
+                alt="logo do docker em branco"></a>
+
+        <section class="links-header">
+            <a href="introinstalacao.html">Instalação</a>
+            <a href="#">O que é</a>
+            <a href="#">Características</a>
+        </section>
+
+        <nav>
+
+            <ul class="barrinha">
+                <li class="btn-fechar"><a href="#"><img src="./imagens/close.svg" alt="Fechar"></a></li>
+                <li><a href="">O que é</a></li>
+                <li><a href="">Vantagens e desvantagens</a></li>
+                <li><a href="">Função</a></li>
+                <li><a href="historia.html">História do Docker</a></li>
+                <li><a href="introinstalacao.html">Introdução à instalação</a></li>
+                <li><a href="virtualizacao.html">O que é virtualização</a></li>
+            </ul>
+
+            <ul>
+                <li class="btn-abrir"><a href="#"><img src="./imagens//menu.svg" alt="Abrir menu"></a></li>
+            </ul>
+        </nav>
+
+        <script>
+            const barra = document.querySelector('.barrinha');
+            const btnAbrir = document.querySelector('.btn-abrir');
+            const btnFechar = document.querySelector('.btn-fechar');
+
+            btnAbrir.addEventListener('click', (e) => {
+                e.preventDefault();
+                barra.classList.add('ativa');
+            });
+
+            btnFechar.addEventListener('click', (e) => {
+                e.preventDefault();
+                barra.classList.remove('ativa');
+            });
+        </script>
+    </header>
+
+    <img class="img-hornet" src="./imagens/VM.png" alt="texto escrito virtualização e quatro computadores">
+
+    <section class="primeira-secao-hornet">
+        <h2 class="titulo-hornet"> O que é uma <span class="colorido">Maquina Virtual</span> (VM)</h2>
+        <p class="textos-hornet">
+            Uma máquina virtual (VM) é um ambiente de computação criado a partir de um pool de recursos de hardware. Ela
+            funciona como um sistema isolado, com CPU, memória, interface de rede e armazenamento próprios.
+        </p>
+        <p class="textos-hornet">
+            Em outras palavras, uma máquina virtual permite executar diferentes sistemas operacionais e aplicações em um
+            mesmo dispositivo físico, de forma isolada e segura. Isso significa que é possível, por exemplo, rodar Linux
+            em um computador Windows ou executar versões diferentes de um mesmo sistema no mesmo equipamento.
+        </p>
+        <p class="textos-hornet">
+            Essas máquinas funcionam a partir de um hipervisor, software responsável por distribuir os recursos do
+            hardware físico para cada VM, garantindo que funcionem como ambientes separados.
+        </p>
+        <p class="textos-hornet">
+            Com esse recurso, organizações e usuários podem realizar testes, hospedar servidores, rodar aplicações
+            legadas e até aumentar a eficiência do uso da infraestrutura, sem necessidade de vários equipamentos
+            físicos.
+        </p>
+
+    </section>
+    <section class="segunda-secao-hornet">
+        <h2 class="titulo-hornet">Como as Maquinas Virtuais<span class="colorido"> Surgiram </span></h2>
+
+        <p class="textos-hornet">
+            A história das máquinas virtuais (VMs) começa na década de 1960, quando os principais fabricantes de
+            computadores buscavam maneiras de aproveitar melhor os recursos limitados de hardware disponíveis na época.
+            A ideia inicial foi criar ambientes virtuais que simulassem sistemas independentes dentro de um único
+            computador físico, possibilitando a execução simultânea de múltiplos processos.
+        </p>
+        <p class="textos-hornet">
+            Nos anos 70, o conceito de virtualização se tornou mais forte e foi essencial para o desenvolvimento de
+            novas arquiteturas e tecnologias. O cientista da computação, Robert P. Goldberg, criou a base teórica de
+            sistemas computacionais virtuais e, no mesmo ano, a IBM lançou um mainframe capaz de executar
+            simultaneamente diferentes sistemas operacionais por meio de um programa de controle, o hypervisor.
+        </p>
+        <p class="textos-hornet">
+            Inicialmente, as máquinas virtuais foram usadas em grandes mainframes, principalmente pela IBM, que
+            desenvolveu a tecnologia para dividir o processamento de um equipamento entre vários usuários, como se cada
+            um tivesse sua própria máquina dedicada. Isso permitia isolamento e segurança, além de otimizar o uso do
+            computador.
+        </p>
+        <p class="textos-hornet">
+            Com o avanço da computação e a popularização dos servidores, as VM ganharam espaço em outros ambientes,
+            principalmente a partir dos anos 1990, com o surgimento de hipervisores mais eficientes e sistemas
+            operacionais preparados para funcionar nesses ambientes emulados. Hoje, as máquinas virtuais são
+            fundamentais para a infraestrutura de TI, permitindo executar diferentes sistemas operacionais e aplicações
+            na mesma máquina física, de forma isolada e segura.
+        </p>
+        <p class="textos-hornet">
+            O hipervisor é o componente-chave que cria e gerencia as VMs, alocando recursos como CPU, memória,
+            armazenamento e rede para cada ambiente virtual. Graças a essa tecnologia, empresas podem otimizar o uso dos
+            seus servidores, realizar testes de software, hospedar aplicações diversas e manter a flexibilidade
+            necessária para a transformação digital, tudo sem a necessidade de múltiplos dispositivos físicos.
+        </p>
+    </section>
+    <footer>
+        <section class="alinfooter">
+            <figure class="imgsfooter">
+                <a href="https://web.whatsapp.com/">
+                    <img src="imagens/whatsapp_logo.png" alt="Logo do Whatsapp" class="redes_socias">
+                </a>
+                <a href="https://www.facebook.com/?locale=pt_BR">
+                    <img src="imagens/facebook_logo.png" alt="Logo do Facebook" class="redes_socias">
+                </a>
+                <a href="https://www.instagram.com/">
+                    <img src="imagens/instagram_logo.png" alt="Logo do Instagram" class="redes_socias">
+                </a>
+                <a href="https://www.threads.com/?hl=pt-br">
+                    <img src="imagens/threads_logo.png" alt="Logo do Threads" class="redes_socias">
+                </a>
+            </figure>
+        </section>
+        <p class="alintextos_footer">Containerize suas aplicações com eficiência e segurança</p><br>
+    </footer>
+</body>
+
+</html>
