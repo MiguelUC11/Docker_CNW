@@ -414,3 +414,29 @@ nav li:last-child a{
     text-align: start;
     border-radius: 50px;
 }
+
+.primeira-secao-hornet, .segunda-secao-hornet {
+  margin-top: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+.titulo-hornet {
+    font-size: 70px;
+    margin-bottom: 100px;
+    text-align: center;
+}
+.textos-hornet {
+  width: 1100px;
+  height: 200px;
+  font-size: 30px;
+  text-align: start;
+  border-radius: 50px;
+}
+
+.segunda-secao-hornet {
+  padding: 100px 0px;
+  background: linear-gradient(rgb(6, 25, 61) 0%, rgb(0, 68, 102) 10%, rgb(0, 68, 102) 100%);
+}
