@@ -200,13 +200,14 @@ footer{
 
 #conteudo_pghistoria{
     margin: 25px 250px 0 250px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-.caixatexto_pghistoria{
+.caixatexto{
     background: linear-gradient(90deg,#00184d 0%, #008a96 100%);
     border-radius: 50px;
-    width: 825px;
-    height: 505px;
     padding: 30px;
     text-align: justify;
     margin-bottom: 75px;
@@ -219,20 +220,22 @@ footer{
 #conteudo_pgintroinstalacao{
     margin: 25px 250px 0 250px;
     text-align: justify;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
-.caixatexto_pgintroinstalacao{
+.caixatexto{
     background: linear-gradient(90deg,#00184d 0%, #008a96 100%);
     border-radius: 50px;
-    width: 825px;
-    height: 175px;
     padding: 30px;
     text-align: justify;
-    margin-bottom: 75px;
+    margin-bottom: 50px;
     font-size: 20px;
 }
 
-.subtitulo_pgintroinstalacao{
+.subtitulo_instalacao{
     margin: 20px 0 10px 20px;
 }
 
@@ -240,12 +243,25 @@ footer{
     margin: 20px 0 10px 0;
 }
 
-#tamanho_cxtextopgintroinstalação{
-    height: 610px;
+#alin_linkspgintroinstalacao{
+    display: flex;
+    justify-content: center;
 }
 
+.link_instal_SO{
+    margin: 0 25px 0 25px;
+    font-size: 22px;
+}
 
-
+#conteudo_pgwindows{
+    margin: 25px 250px 0 250px;
+    text-align: justify;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-size: 20px;
+}
 
 
 
@@ -313,9 +329,6 @@ nav li:last-child a{
     box-sizing: border-box;
 }
 
-
-
-
 .primeira-secao-hornet, .segunda-secao-hornet {
     margin-top: 100px;
     display: flex;
@@ -338,4 +351,90 @@ nav li:last-child a{
 .img-hornet {
     width: 100%;
     height: auto;
+.gradiente-funcao{
+    background: linear-gradient(90deg,#00184d 0%, #008a96 100%);
+    width: 1100px;
+    height: 200px;
+    font-size: 30px;
+    text-align: start;
+    border-radius: 50px;
+}
+.funcao-centralizar-gradiente{
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: start;
+}
+#gradiente-funcao-lista{
+    background: linear-gradient(90deg,#00184d 0%, #008a96 100%);
+    width: 1300px;
+    height: 450px;
+    font-size: 30px;
+    text-align: start;
+    border-radius: 50px;
+}
+#funcao-titulo{
+    margin-top: 60px;
+    margin-left: 70px;
+    width: 1300px;
+    text-align: left;
+}
+#mesclartexto{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.h1-funcao{
+    text-align: center;
+    font-size: 6pc;
+}
+#p-funcao{
+    margin: 30px;
+}
+.redhatemvm-centralizar-gradiente{
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: start;
+}
+.gradiente-redhatemvm{
+    background: linear-gradient(90deg,#00184d 0%, #008a96 100%);
+    width: 1100px;
+    height: 200px;
+    font-size: 30px;
+    text-align: start;
+    border-radius: 50px;
+}
+#p-redhatemvm{
+    margin: 30px;
+}
+.h1-redhatemvm{
+    text-align: center;
+    font-size: 6pc;
+}
+.colorido-vermelho{
+    color: #ff0000;
+}
+#redhatemvm-titulo1{
+    margin-top: 60px;
+    margin-left: 250px;
+    width: 1300px;
+    text-align: left;
+}
+#redhatemvm-titulo2{
+    margin-top: 60px;
+    margin-left: 70px;
+    width: 1300px;
+    text-align: left;
+}
+.gradiente-redhatemvm2{
+    background: linear-gradient(90deg,#00184d 0%, #008a96 100%);
+    width: 1300px;
+    height: 200px;
+    font-size: 30px;
+    text-align: start;
+    border-radius: 50px;
 }

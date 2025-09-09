@@ -3,10 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>História do Docker</title>
     <link rel="stylesheet" href="estilo.css">
-    <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;700&display=swap" rel="stylesheet">
+    <title>Windows</title>
     <link rel="shortcut icon" href="./imagens/docker.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
@@ -26,7 +26,6 @@
                 <li><a href="">Vantagens e desvantagens</a></li>
                 <li><a href="">Função</a></li>
                 <li><a href="historia.html">História do Docker</a></li>
-                <li><a href="introinstalacao.html">Introdução à instalação</a></li>
                 <li><a href="virtualizacao.html">O que é virtualização</a></li>
             </ul>
 
@@ -53,35 +52,38 @@
     </header>
     <main>
         <section class="alin_titulos">
-            <h1 class="titulos">A História do <br><span class="colorido">Docker:</span></h1>
+            <h1 class="titulos">
+                Instalando o <span class="colorido">Docker</span><br>no Windows
+            </h1>
         </section>
-        <section id="conteudo_pghistoria">
+        <section id="conteudo_pgwindows">
+            <p>Agora que você já verificou se seu computador atende aos requisitos
+            para instalação do Docker, vamos ao passo a passo de como instalá-lo no sistema operacional Windows</p>
+            <h2 class="subtitulo_instalacao">Passo 1</h2>
             <section class="caixatexto">
-                <p id="paragrafo_pghistoria">O Docker foi fundado pela empresa dotCloud, composta por Solomon Hykes, Kamel Founadi e Sebastien Pahl,
-                tornando-se uma empresa que realizava serviços como Paas, criando ambientações virtuais para a simplificação
-                e melhoria das aplicações de softwares, tornando mais fácil também o uso de ferramentas. O Docker teve como sua
-                base a tecnologia LXC, que foi criada a partir da demanda por máquinas virtuais, que apresentava riscos e dificuldades
-                quanto à aplicação para desenvolvimento. A tecnologia usava instâncias isoladas para aplicações mais fáceis e consistentes,
-                além de torná-la independente, seja qual for o sistema operacional usado.</p>
-
-                <p id="paragrafo_pghistoria">O Docker inicialmente foi apenas um projeto interno da empresa, porém em março de 2013, durante a PyCon o projeto 
-                viria a ser conhecido por outros desenvolvedores. Solomon Hykes expôs a ideia, anunciando também que a plataforma seria
-                open-source, o que permitiu que diversos programadores conseguissem contribuir para a evolução do Docker, até o que 
-                conhecemos, sendo que a tecnologia foi adotada por grandes empresas como o Google, IBM e até mesmo a Microsoft. 
-                No ano de 2014 a 2017, o Docker criou inovações dentro deste âmbito que ainda não haviam sido exploradas,
-                como o uso de imagens imutáveis, que não permitiam mudanças inesperadas ou até mesmo o Dockerfile e Docker Hub, 
-                responsável por armazenar e gerir essas imagens. Essas inovações e a necessidade do serviço atraiu investimentos
-                e permitiu um aperfeiçoamento ainda maior na plataforma.</p>
-
-                <p id="paragrafo_pghistoria">Com tudo isso o Docker acabou gerando uma revolução dos containers,
-                sendo responsável pela padronização do método para implementação em ambientes
-                para testes ou produção. Se tornando essencial nesse papel, mas ainda que o Docker
-                tenha gerado essa revolução, ele não foi responsável pela criação dos containers, apenas
-                por gerar a visibilidade da tecnologia.</p>
+                <p>Acesse o site oficial do <a href="https://www.docker.com/products/docker-desktop/"><span>Docker</span></a>
+                e clique no botão "Download Docker Desktop", ou em português, "Baixar Docker Desktop" que estará visível assim
+                que você abrir o site, após isso, selecione a opção com o sistema operacional compatível com o instalado em seu
+                computador.</p>
+            </section>
+            <h2 class="subtitulo_instalacao">Passo 2</h2>
+            <section class="caixatexto">
+                <p>Após seguir o primeiro passo, você terá baixado o instalador do Docker em seu computador, procure-o em seu
+                explorador de arquivos, e ao encontrá-lo clique duas vezes no mesmo, aceite os termos, e selecione “Use WSL 2
+                instead of Hyper-V” caso use Windows Home, após isso conclua a instalação. O instalador irá pedir para reiniciar
+                o computador.</p>
+            </section>
+            <h2 class="subtitulo_instalacao">Passo 3</h2>
+            <section class="caixatexto">
+                <p>Após reiniciar sua máquina você deve abrir o PowerShell e executar o seguinte comando:</p><br>
+                <p>docker --version</p>
+                <p>docker run hello-world</p><br>
+                <p>Se a mensagem "Hello from Docker!" aparecer, o Docker foi instalado com sucesso e agora você pode desfrutar
+                de tudo que o Docker oferece!</p>
             </section>
         </section>
     </main>
-   <footer>
+    <footer>
         <section class="alinfooter">
             <figure class="imgsfooter">
                 <a href="https://web.whatsapp.com/">
@@ -90,7 +92,7 @@
                 <a href="https://www.facebook.com/?locale=pt_BR">
                     <img src="imagens/facebook_logo.png" alt="Logo do Facebook" class="redes_socias">
                 </a>
-                <a href="https://www.instagram.com/"> 
+                <a href="https://www.instagram.com/">
                     <img src="imagens/instagram_logo.png" alt="Logo do Instagram" class="redes_socias">
                 </a>
                 <a href="https://www.threads.com/?hl=pt-br">
