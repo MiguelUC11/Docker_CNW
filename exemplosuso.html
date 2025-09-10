@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Docker</title>
+    <link rel="shortcut icon" href="./imagens/dockeresquema-removebg-preview.png" type="image/x-icon">
+    <link rel="stylesheet" href="estilo.css">
+    <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <a href="index.html"><img class="logo-header" src="./imagens/logo-docker.png" alt="logo do docker em branco"></a>
+
+        <section class="links-header">
+            <a href="introinstalacao.html">Instalação</a>
+            <a href="oqehdocker.html">O que é</a>
+            <a href="funcao.html">Função</a>
+        </section>
+
+        <nav>
+
+            <ul class="barrinha">
+                <li class="btn-fechar"><a href="#"><img src="./imagens/close.png" alt="Fechar"></a></li>
+                <li><a href="oqehdocker.html">O que é</a></li>
+                <li><a href="vantagens.html">Vantagens e desvantagens</a></li>
+                <li><a href="funcao.html">Função</a></li>
+                <li><a href="historia.html">História do Docker</a></li>
+                <li><a href="virtualizacao.html">O que é virtualização</a></li>
+                <li><a href="exemplosuso.html">Exemplos de uso</a></li>
+                <li><a href="comandos.html">Principais comandos</a></li>
+
+                <li>
+                    <ul>
+                        
+                        <li class="dropdown">
+                            <a>Instalando o docker</a>
+
+                            <div class="dropdown-menu">
+                                <a href="introinstalacao.html">introdução</a>
+                                <a href="windows.html">No Windows</a>
+                                <a href="macOS.html">No Mac</a>
+                                <a href="linux.html">No Linux</a>
+                                
+                            </div>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <ul>
+                        
+                        <li class="dropdown">
+                            <a>Máquinas virtuais</a>
+
+                            <div class="dropdown-menu">
+                                <a href="vms-oque-e.html">O que é</a>
+                                <a href="historiavm.html">História</a>
+                                <a href="vms-em-red-hat-linux.html">Em red hat linux</a>
+                                <a href="exemplosvm.html">Exemplos</a>
+                                
+                            </div>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <ul>
+                        
+                        <li class="dropdown">
+                            <a>Red Hat Linux</a>
+
+                            <div class="dropdown-menu">
+                                <a href="oqueeredhat.html">O que é</a>
+                                <a href="primeiros-passos.html">Instalação - primeiro passo</a>
+                                <a href="segundo_passo.html">Instalação - segundo passo</a>    
+                                
+                            </div>
+                        </li>
+                    </ul>
+                </li>   
+                <li><a href="conclusão.html">Conclusão</a></li>     
+            </ul>
+
+            <ul>
+                <li class="btn-abrir"><a href="#"><img src="./imagens/menu.png" alt="Abrir menu" class="img-menu"></a></li>
+            </ul>
+        </nav>
+
+        <script>
+            const barra = document.querySelector('.barrinha');
+            const btnAbrir = document.querySelector('.btn-abrir');
+            const btnFechar = document.querySelector('.btn-fechar');
+
+            btnAbrir.addEventListener('click', (e) => {
+                e.preventDefault();
+                barra.classList.add('ativa');
+            });
+
+            btnFechar.addEventListener('click', (e) => {
+                e.preventDefault();
+                barra.classList.remove('ativa');
+            });
+        </script>
+    </header>
+    <section class="titulo-exemplosuso">
+        <p><span class="colorido">Empresas</span> que usam o Docker</p>
+    </section>
+    <section class="premain-exemplosuso">
+        <div class="caixacolorida-exemplosuso"><p> Desde que surgiu, o Docker vem ganhando cada vez mais expressividade. Hoje, ele é usado em praticamente todas as aplicações. Vamos ver algumas empresas mais conhecidas que o utilizam </p></div>    
+    </section>
+    <main class="main-exemplosuso">
+        <section class="banner-exemplosuso" id="fundobanner1-exemplosuso">
+        <img class="imgbanner-exemplosuso" src="./imagens/airbnb.png">
+        <h2 class="corrosa-exemplosuso"> Airbnb: </h2>
+        <p> A Airbnb usa os containers Docker para separar as tarefas empenhadas pelo sistema, garantindo que todas rodem em sistemas igualmente e assim ajam perante os mesmos parâmetros. Eles criaram "Jorbs", um sistema que roda cada tarefa "job" separadamente. O desenvolvedor configura os comandos e dependências que serão utilizados e o jorb cria um container Docker para executar.</p>    
+        </section>
+        <section class="banner-exemplosuso" id="fundobanner2-exemplosuso">
+        <img class="imgbanner-exemplosuso" src="./imagens/google.webp">
+        <h2 class="coramarela-exemplosuso"> Google: </h2>
+        <p> A Google usava containers muito antes do Docker existir, com um sistema próprio chamado Borg. O Borg usava um conceito semelhante a containers para isolar recursos da máquina para cada aplicação e garantir que os serviços pudessem ser executados no mesmo servidor sem interferir um no outro. Com a chegada do Docker, a empresa apoiou a sua utilização pela facilidade de uso da ferramente, podendo expandir mais ainda a tecnologia pelo mundo da computação. </p>    
+        </section>
+        <section class="banner-exemplosuso" id="fundobanner3-exemplosuso">
+        <img class="imgbanner-exemplosuso" src="./imagens/netflix-removebg-preview.png">
+        <h2 class="corvermelha-exemplosuso"> Netflix: </h2>
+        <p> A Netflix usa containers por conta da alta demanda do serviço. Com diversos microsserviços e milhões de usuários, cada serviço deve rodar de maneira rápida, escalável e isolada, assim, atualizações são feitas rapidamente, fica simples de adaptar cada serviço ao necessário e erros não afetam toda a aplicação, um container "bugado" não vai derrubar os outros. Para rodar os containers, a Netflix usa o Titus, sua própria plataforma de containers que roda na nuvem da AWS onde ela está hospedada. </p>    
+        </section>
+        <section class="banner-exemplosuso" id="fundobanner4-exemplosuso">
+        <img class="imgbanner-exemplosuso" src="./imagens/spotify-removebg-preview.png">
+        <h2 class="corverde-exemplosuso"> Spotify: </h2>
+        <p> O Spotify também usa containers pela alta demanda do serviço, com diversos mcirosserviços e milhões de usuário. Assim, cada serviço roda de maneira isolada e mais eficaz, proporcionando mais eficiência ao funcionamento do aplicativo. Porém, o número de containers ficou tão grande que o Spotify teve que implementar uma ferrmanta própria, o "Tsunami", que fazia atualizações graduais nos containers para evitar que o sistema ficasse sobrecarregado. </p>    
+        </section>
+    </main>
+    <footer class="footer">
+        <section class="alinfooter">
+            <figure class="imgsfooter">
+                <a href="https://web.whatsapp.com/">
+                    <img src="./imagens/whatsapp_logo.png" alt="Logo do Whatsapp" class="redes_socias">
+                </a>
+                <a href="https://www.facebook.com/?locale=pt_BR">
+                    <img src="./imagens/facebook_logo.png" alt="Logo do Facebook" class="redes_socias">
+                </a>
+                <a href="https://www.instagram.com/"> 
+                    <img src="./imagens/instagram_logo.png" alt="Logo do Instagram" class="redes_socias">
+                </a>
+                <a href="https://www.threads.com/?hl=pt-br">
+                    <img src="./imagens/threads_logo.png" alt="Logo do Threads" class="redes_socias">
+                </a>
+            </figure>
+        </section>
+        <p class="alintextos_footer">Containerize suas aplicações com eficiência e segurança</p><br>
+    </footer>
+
+    </body>
+</html>

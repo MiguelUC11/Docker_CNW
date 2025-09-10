@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Docker</title>
+    <link rel="shortcut icon" href="./imagens/dockeresquema-removebg-preview.png" type="image/x-icon">
+    <link rel="stylesheet" href="estilo.css">
+    <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <a href="index.html"><img class="logo-header" src="./imagens/logo-docker.png" alt="logo do docker em branco"></a>
+
+        <section class="links-header">
+            <a href="introinstalacao.html">Instalação</a>
+            <a href="oqehdocker.html">O que é</a>
+            <a href="funcao.html">Função</a>
+        </section>
+
+        <nav>
+
+            <ul class="barrinha">
+                <li class="btn-fechar"><a href="#"><img src="./imagens/close.png" alt="Fechar"></a></li>
+                <li><a href="oqehdocker.html">O que é</a></li>
+                <li><a href="vantagens.html">Vantagens e desvantagens</a></li>
+                <li><a href="funcao.html">Função</a></li>
+                <li><a href="historia.html">História do Docker</a></li>
+                <li><a href="virtualizacao.html">O que é virtualização</a></li>
+                <li><a href="exemplosuso.html">Exemplos de uso</a></li>
+                <li><a href="comandos.html">Principais comandos</a></li>
+
+                <li>
+                    <ul>
+                        
+                        <li class="dropdown">
+                            <a>Instalando o docker</a>
+
+                            <div class="dropdown-menu">
+                                <a href="introinstalacao.html">introdução</a>
+                                <a href="windows.html">No Windows</a>
+                                <a href="macOS.html">No Mac</a>
+                                <a href="linux.html">No Linux</a>
+                                
+                            </div>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <ul>
+                        
+                        <li class="dropdown">
+                            <a>Máquinas virtuais</a>
+
+                            <div class="dropdown-menu">
+                                <a href="vms-oque-e.html">O que é</a>
+                                <a href="historiavm.html">História</a>
+                                <a href="vms-em-red-hat-linux.html">Em red hat linux</a>
+                                <a href="exemplosvm.html">Exemplos</a>
+                                
+                            </div>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <ul>
+                        
+                        <li class="dropdown">
+                            <a>Red Hat Linux</a>
+
+                            <div class="dropdown-menu">
+                                <a href="oqueeredhat.html">O que é</a>
+                                <a href="primeiros-passos.html">Instalação - primeiro passo</a>
+                                <a href="segundo_passo.html">Instalação - segundo passo</a>    
+                                
+                            </div>
+                        </li>
+                    </ul>
+                </li>   
+                <li><a href="conclusão.html">Conclusão</a></li>     
+            </ul>
+
+            <ul>
+                <li class="btn-abrir"><a href="#"><img src="./imagens/menu.png" alt="Abrir menu" class="img-menu"></a></li>
+            </ul>
+        </nav>
+
+        <script>
+            const barra = document.querySelector('.barrinha');
+            const btnAbrir = document.querySelector('.btn-abrir');
+            const btnFechar = document.querySelector('.btn-fechar');
+
+            btnAbrir.addEventListener('click', (e) => {
+                e.preventDefault();
+                barra.classList.add('ativa');
+            });
+
+            btnFechar.addEventListener('click', (e) => {
+                e.preventDefault();
+                barra.classList.remove('ativa');
+            });
+        </script>
+    </header>
+    <main>
+        <section class="alin_titulos">
+            <h1 class="titulos"><span class="colorido">Conclusão</span></h1>
+        </section>
+        <section id="conteudo_pghistoria">
+            <section class="caixatexto">
+                <p id="paragrafo_pghistoria">Em conclusão, o Docker é uma ferramenta moderna que trouxe muitas facilidades para a área da tecnologia e do desenvolvimento de softwares. Ele funciona através dos chamados contêineres, que podemos imaginar como caixinhas independentes onde ficam armazenados os programas e tudo o que eles precisam para funcionar corretamente. Esses contêineres são úteis porque garantem que o programa rode do mesmo jeito em qualquer computador, sem dar erros de compatibilidade, já que levam junto todas as dependências e configurações necessárias.</p>
+
+                <p id="paragrafo_pghistoria">Outra grande vantagem é que o Docker é muito mais leve e rápido do que as máquinas virtuais, que antes eram a principal forma de isolar sistemas. Enquanto uma máquina virtual cria um sistema inteiro dentro do computador, consumindo bastante memória e processamento, o contêiner aproveita o próprio sistema operacional, gastando menos recursos. Isso faz com que o Docker ajude a economizar tempo, dinheiro e capacidade dos equipamentos, além de deixar o processo mais simples e eficiente.</p>
+
+                <p id="paragrafo_pghistoria">Por causa dessas qualidades, o Docker se tornou extremamente popular em empresas e entre desenvolvedores de software, que precisam criar, testar e publicar programas de forma ágil e segura. Ele é usado em diferentes áreas, principalmente na computação em nuvem, que é quando programas e serviços funcionam através da internet, sem depender de um único computador físico. Hoje em dia, praticamente todas as grandes empresas de tecnologia utilizam Docker em seus projetos, pois ele garante organização, velocidade e confiabilidade.</p>
+
+                <p id="paragrafo_pghistoria">Podemos dizer que o Docker mudou a forma como as aplicações são criadas e executadas no mundo da informática, já que tornou o processo mais acessível e menos complicado. Mesmo que muitas pessoas fora da área ainda não conheçam essa tecnologia, ela é essencial para que aplicativos, sites e serviços que usamos diariamente funcionem sem problemas. Por isso, o Docker se consolidou como uma das ferramentas mais importantes da atualidade e deve continuar crescendo e evoluindo junto com a tecnologia.</p>
+
+            </section>
+        </section>
+    </main>
+   <footer>
+        <section class="alinfooter">
+            <figure class="imgsfooter">
+                <a href="https://web.whatsapp.com/">
+                    <img src="imagens/whatsapp_logo.png" alt="Logo do Whatsapp" class="redes_socias">
+                </a>
+                <a href="https://www.facebook.com/?locale=pt_BR">
+                    <img src="imagens/facebook_logo.png" alt="Logo do Facebook" class="redes_socias">
+                </a>
+                <a href="https://www.instagram.com/"> 
+                    <img src="imagens/instagram_logo.png" alt="Logo do Instagram" class="redes_socias">
+                </a>
+                <a href="https://www.threads.com/?hl=pt-br">
+                    <img src="imagens/threads_logo.png" alt="Logo do Threads" class="redes_socias">
+                </a>
+            </figure>
+        </section>
+        <p class="alintextos_footer">Containerize suas aplicações com eficiência e segurança</p><br>
+    </footer>
+</body>
+</html>

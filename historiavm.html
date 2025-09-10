@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Docker</title>
+    <link rel="shortcut icon" href="./imagens/dockeresquema-removebg-preview.png" type="image/x-icon">
+    <link rel="stylesheet" href="estilo.css">
+    <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <a href="index.html"><img class="logo-header" src="./imagens/logo-docker.png" alt="logo do docker em branco"></a>
+
+        <section class="links-header">
+            <a href="introinstalacao.html">Instalação</a>
+            <a href="oqehdocker.html">O que é</a>
+            <a href="funcao.html">Função</a>
+        </section>
+
+        <nav>
+
+            <ul class="barrinha">
+                <li class="btn-fechar"><a href="#"><img src="./imagens/close.png" alt="Fechar"></a></li>
+                <li><a href="oqehdocker.html">O que é</a></li>
+                <li><a href="vantagens.html">Vantagens e desvantagens</a></li>
+                <li><a href="funcao.html">Função</a></li>
+                <li><a href="historia.html">História do Docker</a></li>
+                <li><a href="virtualizacao.html">O que é virtualização</a></li>
+                <li><a href="exemplosuso.html">Exemplos de uso</a></li>
+                <li><a href="comandos.html">Principais comandos</a></li>
+
+                <li>
+                    <ul>
+                        
+                        <li class="dropdown">
+                            <a>Instalando o docker</a>
+
+                            <div class="dropdown-menu">
+                                <a href="introinstalacao.html">introdução</a>
+                                <a href="windows.html">No Windows</a>
+                                <a href="macOS.html">No Mac</a>
+                                <a href="linux.html">No Linux</a>
+                                
+                            </div>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <ul>
+                        
+                        <li class="dropdown">
+                            <a>Máquinas virtuais</a>
+
+                            <div class="dropdown-menu">
+                                <a href="vms-oque-e.html">O que é</a>
+                                <a href="historiavm.html">História</a>
+                                <a href="vms-em-red-hat-linux.html">Em red hat linux</a>
+                                <a href="exemplosvm.html">Exemplos</a>
+                                
+                            </div>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <ul>
+                        
+                        <li class="dropdown">
+                            <a>Red Hat Linux</a>
+
+                            <div class="dropdown-menu">
+                                <a href="oqueeredhat.html">O que é</a>
+                                <a href="primeiros-passos.html">Instalação - primeiro passo</a>
+                                <a href="segundo_passo.html">Instalação - segundo passo</a>    
+                                
+                            </div>
+                        </li>
+                    </ul>
+                </li>   
+                <li><a href="conclusão.html">Conclusão</a></li>     
+            </ul>
+
+            <ul>
+                <li class="btn-abrir"><a href="#"><img src="./imagens/menu.png" alt="Abrir menu" class="img-menu"></a></li>
+            </ul>
+        </nav>
+
+        <script>
+            const barra = document.querySelector('.barrinha');
+            const btnAbrir = document.querySelector('.btn-abrir');
+            const btnFechar = document.querySelector('.btn-fechar');
+
+            btnAbrir.addEventListener('click', (e) => {
+                e.preventDefault();
+                barra.classList.add('ativa');
+            });
+
+            btnFechar.addEventListener('click', (e) => {
+                e.preventDefault();
+                barra.classList.remove('ativa');
+            });
+        </script>
+    </header>
+        <section class="titulo-historiavm">
+            <p> História das <span class="colorido">VMs</span></p>
+        </section>
+        <section class="premain-historiavm">
+            <div class="caixacolorida-historiavm"><p> A história das <span class="colorido">máquinas virtuais</span> (VMs) está intimamente ligada à evolução da <span class="colorido">virtualização</span>, uma tecnologia que transformou a maneira como os sistemas operacionais e os recursos de hardware são gerenciados. </p></div>    
+        </section>
+        <main class="main-historiavm">
+            <section class="banner-historiavm">
+                <div class="titulobanner-historiavm"><p> Anos 60, <span class="colorido">O Início </span></p></div>
+                <div class="container-historiavm"> 
+                    <p> A virtualização começa na década de 1960, idealizada principalmente pela IBM. A ideia era dividir um computador (recurso muito grande e caro na época) em diversas partes que rodassem seus próprios sistemas operacionais para que os usuários pudessem usar, sem precisar ter uma máquina para cada um, algo que seria inviável para as empresas. Assim, as empresas podiam aproveitar melhor os recursos físicos da máquina, permitindo que vários usuários compartilhassem a mesma mainframe (computador superpotente). </p>
+                </div>
+            </section>
+            <section class="banner-historiavm">
+                <div class="titulobanner-historiavm"><p> Anos 70 e 80, <span class="colorido">Consolidação Corporativa </span></p></div>
+                <div class="container-historiavm"> 
+                    <p> Nos anos seguintes a virtualização começou a se consolidar melhor no mercado entre as grandes corporações, com diversos avanços que proporcionaram um desempenho ainda melhor das VMs. Surgiram softwares que permitiam rodar diversos sistemas operacionais simultaneamente no servidor como o IBM Virtual Machine Facility/370, facilitando testes e desenvolvimento de diferentes sistemas sem precisar de hardwares separados, tudo integrado na mesma mainframe ppor meio das máquinas virtuais. </p>
+                </div>
+            </section> 
+            <section class="banner-historiavm">
+                <div class="titulobanner-historiavm"><p> Anos 90, <span class="colorido">Expansão para Desktops </span></p></div>
+                <div class="container-historiavm"> 
+                    <p> Na década de 1990, a virtualização começou a se expandir para fora do eixo das grande empresas, atingindo um maior número de usuários por meio dos computadores pessoais que vinham surgindo. Agora a necessidade de rodar diversos sistemas operacionais na mesma máquina não era mais restrita às mainframes. Diversos softwares como o VMware (1998) passaram a trazer a virtualização para desktops, tornando a virtualização acessível para mais camadas de desenvolvedores.  </p>
+                </div>
+            </section> 
+            <section class="banner-historiavm">
+                <div class="titulobanner-historiavm"><p> Anos 2000, <span class="colorido">Cloud Computing </span></p></div>
+                <div class="container-historiavm">
+                    <p> Nos anos 2000, começou a surgir uma nova onda mundial no âmbito da computação, o Cloud Computing (computação em nuvem). Com isso, as empresa tinham data centers enormes com centenas ou milhares de servidores físicos, todos rodando paralelamente e separados, o que tornava um processo caro e pouco eficiente. Com a virtualização foi possível reduzir estes milhares de servidores físicos a um grande servidor, que era dividido em diversas VMs que rodavam isoladamente como se fossem um servidor. Isso permitiu maior economia de energia, espaço e hardware, facilitando também o gerenciamento dos servidores e trazendo mais escalabilidade. </p>
+                </div>
+            </section>
+            <section class="banner-historiavm">
+                <div class="titulobanner-historiavm"><p>Atualidade, <span class="colorido">VMs x Containers </span></p></div>
+                <div class="container-historiavm"> 
+                    <p> Hoje em dia as VMs precisam dividir a cena com os containers, que empenham um papel muito similar, porém, são mais leves que as VMs, enquanto em contrapartida estes não possuem a capacidade de rodar sistemas operacionais, apenas a aplicação. Com isso, as VMs passam a ser usadas em conjunto com o containers. VMs são muito presentes ainda na computação em nvuem e aplicações onde é necessário um sistema operacional específico, enquanto os container são mais usados em aplicações leves e portáteis dentro das VMs ou aplicações separadas que não precisem de sistemas operacionais específicos, combinando assim, portabilidade, eficiência e isolamento dos sistemas. </p>
+                </div>
+            </section>          
+        </main>
+        <footer class="footer">
+            <section class="alinfooter">
+                <figure class="imgsfooter">
+                    <a href="https://web.whatsapp.com/">
+                        <img src="./imagens/whatsapp_logo.png" alt="Logo do Whatsapp" class="redes_socias">
+                    </a>
+                    <a href="https://www.facebook.com/?locale=pt_BR">
+                        <img src="./imagens/facebook_logo.png" alt="Logo do Facebook" class="redes_socias">
+                    </a>
+                    <a href="https://www.instagram.com/"> 
+                        <img src="./imagens/instagram_logo.png" alt="Logo do Instagram" class="redes_socias">
+                    </a>
+                    <a href="https://www.threads.com/?hl=pt-br">
+                        <img src="./imagens/threads_logo.png" alt="Logo do Threads" class="redes_socias">
+                    </a>
+                </figure>
+            </section>
+            <p class="alintextos_footer">Containerize suas aplicações com eficiência e segurança</p><br>
+        </footer>
+
+    </body>
+</html>

@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Docker</title>
+    <link rel="shortcut icon" href="./imagens/dockeresquema-removebg-preview.png" type="image/x-icon">
+    <link rel="stylesheet" href="estilo.css">
+    <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <a href="index.html"><img class="logo-header" src="./imagens/logo-docker.png" alt="logo do docker em branco"></a>
+
+        <section class="links-header">
+            <a href="introinstalacao.html">Instalação</a>
+            <a href="oqehdocker.html">O que é</a>
+            <a href="funcao.html">Função</a>
+        </section>
+
+        <nav>
+
+            <ul class="barrinha">
+                <li class="btn-fechar"><a href="#"><img src="./imagens/close.png" alt="Fechar"></a></li>
+                <li><a href="oqehdocker.html">O que é</a></li>
+                <li><a href="vantagens.html">Vantagens e desvantagens</a></li>
+                <li><a href="funcao.html">Função</a></li>
+                <li><a href="historia.html">História do Docker</a></li>
+                <li><a href="virtualizacao.html">O que é virtualização</a></li>
+                <li><a href="exemplosuso.html">Exemplos de uso</a></li>
+                <li><a href="comandos.html">Principais comandos</a></li>
+
+                <li>
+                    <ul>
+                        
+                        <li class="dropdown">
+                            <a>Instalando o docker</a>
+
+                            <div class="dropdown-menu">
+                                <a href="introinstalacao.html">introdução</a>
+                                <a href="windows.html">No Windows</a>
+                                <a href="macOS.html">No Mac</a>
+                                <a href="linux.html">No Linux</a>
+                                
+                            </div>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <ul>
+                        
+                        <li class="dropdown">
+                            <a>Máquinas virtuais</a>
+
+                            <div class="dropdown-menu">
+                                <a href="vms-oque-e.html">O que é</a>
+                                <a href="historiavm.html">História</a>
+                                <a href="vms-em-red-hat-linux.html">Em red hat linux</a>
+                                <a href="exemplosvm.html">Exemplos</a>
+                                
+                            </div>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <ul>
+                        
+                        <li class="dropdown">
+                            <a>Red Hat Linux</a>
+
+                            <div class="dropdown-menu">
+                                <a href="oqueeredhat.html">O que é</a>
+                                <a href="primeiros-passos.html">Instalação - primeiro passo</a>
+                                <a href="segundo_passo.html">Instalação - segundo passo</a>    
+                                
+                            </div>
+                        </li>
+                    </ul>
+                </li>   
+                <li><a href="conclusão.html">Conclusão</a></li>     
+            </ul>
+
+            <ul>
+                <li class="btn-abrir"><a href="#"><img src="./imagens/menu.png" alt="Abrir menu" class="img-menu"></a></li>
+            </ul>
+        </nav>
+
+        <script>
+            const barra = document.querySelector('.barrinha');
+            const btnAbrir = document.querySelector('.btn-abrir');
+            const btnFechar = document.querySelector('.btn-fechar');
+
+            btnAbrir.addEventListener('click', (e) => {
+                e.preventDefault();
+                barra.classList.add('ativa');
+            });
+
+            btnFechar.addEventListener('click', (e) => {
+                e.preventDefault();
+                barra.classList.remove('ativa');
+            });
+        </script>
+    </header>
+        <section class="titulo-oqehdocker">
+            <p> O que é o <span class="colorido">Docker</span></p>
+        </section>
+        <section class="premain-oqehdocker">
+            <div class="caixacolorida-oqehdocker"><p> O Docker é uma plataforma de <span class="colorido">containerização</span> que empacota aplicações e suas dependências em <span class="colorido">containers</span>, garantindo que rodem de forma igual em qualquer ambiente. </p></div>    
+        </section>
+        <section class="subtitulos-oqehdocker">
+            <div class="subtitulos2-oqehdocker"><p> O que são <span class="colorido">containers</span>?</p></div>
+            <div class="subtitulos2-oqehdocker"><p> Como usar <span class="colorido">containers</span>?</p></div>    
+        </section>
+        <main class="main-oqehdocker">
+            <section class="banner-oqehdocker" id="primeirobanner-oqehdocker"><p> Containers são como pequenas “caixas” virtuais que isolam uma aplicação do resto do sistema operacional. Dentro deles ficam não só o código da aplicação, mas também todas as dependências necessárias, como bibliotecas e configurações. Isso garante que a aplicação rode de forma consistente em qualquer ambiente, sem problemas de compatibilidade. Além disso, os containers são leves e rápidos, pois compartilham o núcleo do sistema host. </p></section>
+            <section class="banner-oqehdocker"><p> Para usar um container, você pode configurar seus recursos de sistema como memória, CPU e armazenamento, suas variáveis de ambiente como senhas, APIs e URLs de banco de dados, suas dependências(pacotes) como softwares, bibliotecas e ferramentas, entre outras configurações. Depois disso, você empacota as aplicações ou parte delas nos containers e consegue rodá-las sem afetar os outros containers de sua aplicação, em caso de erros ou interferências. E caso você deseje alterar alguma coisa na aplicação, ou subir atualizações, você pode fazer tudo isso isoladamente, sem afetar os outros containers do sistema. </p></section>
+        </main>
+        <figure class="espacoimagem-oqehdocker">
+            <img src="./imagens/dockeresquema-removebg-preview.png" class="imagem-oqehdocker">
+            <div class="legenda-oqehdocker"><p> Como podemos ver na imagem acima que esquematiza o funcionamento de um container docker, o sistema foi dividido em três containers que usam a mesma infraestrutura original (kernell), mas com demandas diferentes, e logo, uso de recursos diferentes, sem precisar aplicar os mesmos recursos em todos os elementos da aplicação, até nos que não precisam. Com o container, você pode dividir as partes do código, e aplicar os recursos que cada uma precisa separadamente.</p></div>
+        </figure>
+        <section class="subtitulos-oqehdocker">
+            <div class="subtitulos2-oqehdocker"><p> Quando <span class="colorido">aplicar</span> containers? </p></div>
+        </section>
+        <section class="subtitulos-oqehdocker">
+                <div class="caixacolorida2-oqehdocker"><p> Hoje em dia, quase todas as aplicações usam containerização. Porém, geralmente usa-se containers em casos de sistemas grandes, com diversos serviços e aplicações complexas, o que propicia a aplicação de sistemas isolados para que não haja interferência e disparidades entre cada parte do código. Costuma-se usar containers para testes e desenvolvimento, propiciando o mesmo ambiente para todos os desenvovlvedores, para divisão das funções do sistema em diversos microsserviços, e para tornar a aplicação mais escalável, permitindo que ela se adapte à diferentes situações com mais eficiência. </p></div>
+        </section>
+        <footer class="footer">
+            <section class="alinfooter">
+                <figure class="imgsfooter">
+                    <a href="https://web.whatsapp.com/">
+                        <img src="./imagens/whatsapp_logo.png" alt="Logo do Whatsapp" class="redes_socias">
+                    </a>
+                    <a href="https://www.facebook.com/?locale=pt_BR">
+                        <img src="./imagens/facebook_logo.png" alt="Logo do Facebook" class="redes_socias">
+                    </a>
+                    <a href="https://www.instagram.com/"> 
+                        <img src="./imagens/instagram_logo.png" alt="Logo do Instagram" class="redes_socias">
+                    </a>
+                    <a href="https://www.threads.com/?hl=pt-br">
+                        <img src="./imagens/threads_logo.png" alt="Logo do Threads" class="redes_socias">
+                    </a>
+                </figure>
+            </section>
+            <p class="alintextos_footer">Containerize suas aplicações com eficiência e segurança</p><br>
+        </footer>
+
+    </body>
+</html>

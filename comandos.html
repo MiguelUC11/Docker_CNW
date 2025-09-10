@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Docker</title>
+    <link rel="shortcut icon" href="./imagens/dockeresquema-removebg-preview.png" type="image/x-icon">
+    <link rel="stylesheet" href="estilo.css">
+    <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <a href="index.html"><img class="logo-header" src="./imagens/logo-docker.png" alt="logo do docker em branco"></a>
+
+        <section class="links-header">
+            <a href="introinstalacao.html">Instalação</a>
+            <a href="oqehdocker.html">O que é</a>
+            <a href="funcao.html">Função</a>
+        </section>
+
+        <nav>
+
+            <ul class="barrinha">
+                <li class="btn-fechar"><a href="#"><img src="./imagens/close.png" alt="Fechar"></a></li>
+                <li><a href="oqehdocker.html">O que é</a></li>
+                <li><a href="vantagens.html">Vantagens e desvantagens</a></li>
+                <li><a href="funcao.html">Função</a></li>
+                <li><a href="historia.html">História do Docker</a></li>
+                <li><a href="virtualizacao.html">O que é virtualização</a></li>
+                <li><a href="exemplosuso.html">Exemplos de uso</a></li>
+                <li><a href="comandos.html">Principais comandos</a></li>
+
+                <li>
+                    <ul>
+                        
+                        <li class="dropdown">
+                            <a>Instalando o docker</a>
+
+                            <div class="dropdown-menu">
+                                <a href="introinstalacao.html">introdução</a>
+                                <a href="windows.html">No Windows</a>
+                                <a href="macOS.html">No Mac</a>
+                                <a href="linux.html">No Linux</a>
+                                
+                            </div>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <ul>
+                        
+                        <li class="dropdown">
+                            <a>Máquinas virtuais</a>
+
+                            <div class="dropdown-menu">
+                                <a href="vms-oque-e.html">O que é</a>
+                                <a href="historiavm.html">História</a>
+                                <a href="vms-em-red-hat-linux.html">Em red hat linux</a>
+                                <a href="exemplosvm.html">Exemplos</a>
+                                
+                            </div>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <ul>
+                        
+                        <li class="dropdown">
+                            <a>Red Hat Linux</a>
+
+                            <div class="dropdown-menu">
+                                <a href="oqueeredhat.html">O que é</a>
+                                <a href="primeiros-passos.html">Instalação - primeiro passo</a>
+                                <a href="segundo_passo.html">Instalação - segundo passo</a>    
+                                
+                            </div>
+                        </li>
+                    </ul>
+                </li>   
+                <li><a href="conclusão.html">Conclusão</a></li>     
+            </ul>
+
+            <ul>
+                <li class="btn-abrir"><a href="#"><img src="./imagens/menu.png" alt="Abrir menu" class="img-menu"></a></li>
+            </ul>
+        </nav>
+
+        <script>
+            const barra = document.querySelector('.barrinha');
+            const btnAbrir = document.querySelector('.btn-abrir');
+            const btnFechar = document.querySelector('.btn-fechar');
+
+            btnAbrir.addEventListener('click', (e) => {
+                e.preventDefault();
+                barra.classList.add('ativa');
+            });
+
+            btnFechar.addEventListener('click', (e) => {
+                e.preventDefault();
+                barra.classList.remove('ativa');
+            });
+        </script>
+    </header>
+    <section class="titulo-exemplosuso">
+        <p><span class="colorido">Principais códigos </span> do Docker</p>
+    </section>
+    <section class="premain-exemplosuso">
+        <div class="caixacolorida-exemplosuso"><p> Para o Docker de forma eficiente, é essencial conhecer seus principais comandos. Eles podem ser agrupados em categorias: imagens, containers, redes, volumes e gerenciamento geral.</p></div>    
+    </section>
+    <main class="main-exemplosuso">
+        <section class="banner-exemplosuso" id="fundobanner1-exemplosuso">
+        
+        <h2 class="corrosa-exemplosuso"> 1. Comandos de Gerenciamento de Imagens </h2>
+        <p> 
+            <ul>
+                <li>docker pull &lt;nome_da_imagem&gt;:<br>
+                Baixa uma imagem do Docker Hub ou de outro repositório.</li>
+                <li>docker build -t &lt;nome_da_imagem&gt; &lt;caminho_do_dockerfile&gt;:<br>
+                Constrói uma imagem a partir de um Dockerfile.</li>
+                <li>docker images:<br>
+                Lista todas as imagens disponíveis localmente.</li>
+                <li>docker rmi &lt;nome_da_imagem&gt;:<br>
+                Remove uma imagem local.</li>
+            </ul>
+        </p>    
+        </section>
+        <section class="banner-exemplosuso" id="fundobanner2-exemplosuso">
+        <h2 class="coramarela-exemplosuso"> 2. Comandos de Containers </h2>
+        <p>
+            <ul>
+                <li>docker run -d --name &lt;nome_do_container&gt; &lt;nome_da_imagem&gt;:<br>
+                Inicia um novo container em segundo plano.</li>
+                <li>docker ps:<br>
+                Lista todos os containers em execução.</li>
+                <li>docker stop &lt;nome_do_container&gt;:<br>
+                Para um container em execução.</li>
+                <li>docker rm &lt;nome_do_container&gt;:<br>
+                Remove um container parado.</li>
+                <li>docker exec -it &lt;nome_do_container&gt; /bin/bash:<br>
+                Acessa o terminal de um container em execução.</li>
+            </ul>
+        </p>    
+        </section>
+        <section class="banner-exemplosuso" id="fundobanner3-exemplosuso">
+        <h2 class="corvermelha-exemplosuso"> 3. Comandos de Redes </h2>
+        <p> 
+            <ul>
+                <li>docker network create &lt;nome_da_rede&gt;:<br>
+                Cria uma nova rede Docker.</li>
+                <li>docker network ls:<br>
+                Lista todas as redes Docker.</li>
+                <li>docker network inspect &lt;nome_da_rede&gt;:<br>
+                Mostra detalhes sobre uma rede específica.</li>
+                <li>docker network rm &lt;nome_da_rede&gt;:<br>
+                Remove uma rede Docker.</li>
+            </ul>
+        </p>    
+        </section>
+        <section class="banner-exemplosuso" id="fundobanner4-exemplosuso">
+        <h2 class="corverde-exemplosuso"> 4. Comandos de Volumes</h2>
+        <p>
+            <ul>
+                <li>docker volume create &lt;nome_do_volume&gt;:<br>
+                Cria um novo volume Docker.</li>
+                <li>docker volume ls:<br>
+                Lista todos os volumes Docker.</li>
+                <li>docker volume inspect &lt;nome_do_volume&gt;:<br>
+                Mostra detalhes sobre um volume específico.</li>
+                <li>docker volume rm &lt;nome_do_volume&gt;:<br>
+                Remove um volume Docker.</li>
+            </ul>
+        </p>    
+        </section>
+        <section class="banner-exemplosuso" id="fundobanner1-exemplosuso">
+        
+        <h2 class="corrosa-exemplosuso"> 5. Comandos de Informações e Limpeza </h2>
+        <p> 
+            <ul>
+                <li>docker info:<br>
+                Exibe informações detalhadas sobre a instalação do Docker.</li>
+                <li>docker stats:<br>
+                Mostra o uso de recursos em tempo real dos containers em execução.</li>
+                <li>docker system prune:<br>
+                Remove todos os containers parados, redes não utilizadas, imagens pendentes e caches de construção.</li>
+            </ul>
+        </p>    
+        </section>
+        <section class="banner-exemplosuso" id="fundobanner2-exemplosuso">
+        <h2 class="coramarela-exemplosuso">6. Docker Compose </h2>
+        <p>
+            <ul>
+                <li>docker-compose up -d:<br>
+                Inicia todos os serviços definidos em um arquivo docker-compose.yml em segundo plano.</li>
+                <li>docker-compose down:<br>
+                Para e remove todos os containers, redes e volumes definidos no docker-compose.yml.</li>
+                <li>docker-compose ps:<br>
+                Lista os containers gerenciados pelo Docker Compose.</li>
+            </ul>
+        </p>    
+        </section>
+    </main>
+    <footer class="footer">
+        <section class="alinfooter">
+            <figure class="imgsfooter">
+                <a href="https://web.whatsapp.com/">
+                    <img src="./imagens/whatsapp_logo.png" alt="Logo do Whatsapp" class="redes_socias">
+                </a>
+                <a href="https://www.facebook.com/?locale=pt_BR">
+                    <img src="./imagens/facebook_logo.png" alt="Logo do Facebook" class="redes_socias">
+                </a>
+                <a href="https://www.instagram.com/"> 
+                    <img src="./imagens/instagram_logo.png" alt="Logo do Instagram" class="redes_socias">
+                </a>
+                <a href="https://www.threads.com/?hl=pt-br">
+                    <img src="./imagens/threads_logo.png" alt="Logo do Threads" class="redes_socias">
+                </a>
+            </figure>
+        </section>
+        <p class="alintextos_footer">Containerize suas aplicações com eficiência e segurança</p><br>
+    </footer>
+
+    </body>
+</html>
